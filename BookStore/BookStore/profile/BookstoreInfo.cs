@@ -7,8 +7,7 @@ namespace BookStore.profile
         public BookstoreInfo() {
 
             CreateMap<Entities.Books, Models.Books>();
-            //CreateMap<Entities.Author,Models.Author>();
-            //CreateMap<Entities.Genre, Models.Genre>();
+            CreateMap<Entities.Genre, Models.Genre>().ReverseMap();
 
         }
     }

@@ -1,6 +1,7 @@
 ﻿using BookStore.DBContext;
 using BookStore.Entities;
 using BookStore.Migrations;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace BookStore.Repository
@@ -82,5 +83,31 @@ namespace BookStore.Repository
         {
             return await bookStoreDb.SaveChangesAsync() > 0;
         }
+
+       
+        public async Task CreateGenre(Entities.Genre genre)
+        {
+           var exists = await bookStoreDb.Genres.
+                Where(x => x.genre_name == genre.genre_name).FirstOrDefaultAsync();
+            if (exists == null)
+            {
+                 bookStoreDb.Genres.Add(genre);
+            }
+
+        }
+        public async Task<IEnumerable<Genre>> GetGenresAsync()
+        {
+
+            return await bookStoreDb.Genres.ToListAsync();
+
+        }
+
+        public async Task<Genre?> GetGenresByIdAsync(int id)
+        {
+            return await bookStoreDb.Genres.Where(x => x.genre_id == id).FirstOrDefaultAsync();
+        }
     }
+
+        
 }
+

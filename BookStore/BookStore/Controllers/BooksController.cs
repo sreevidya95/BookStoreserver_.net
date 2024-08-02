@@ -67,7 +67,7 @@ namespace BookStore.Controllers
         }
         //deleting single book
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteBook(int id)
+        public async Task<IActionResult> DeleteBook(int id)
         {
             try
             {

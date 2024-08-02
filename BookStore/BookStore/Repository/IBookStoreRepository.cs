@@ -10,6 +10,9 @@ namespace BookStore.Repository
         public Task<Books> CreateBooksAsync();
         //update will get update when we sync the model and entity 
         public Task DeleteBooksAsync(int id);
+        public Task<IEnumerable<Genre>> GetGenresAsync();
+        public Task<Genre?> GetGenresByIdAsync(int id);
+        public Task CreateGenre(Entities.Genre genre);
         public Task<bool> SyncDb();
 
     }

@@ -34,3 +34,664 @@ WHERE [book_id] = @p0;
 2024-08-02 16:17:00.984 +05:30  INF  Executed action BookStore.Controllers.BooksController.DeleteBook (BookStore) in 5494.0877ms
 2024-08-02 16:17:00.986 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.DeleteBook (BookStore)'
 2024-08-02 16:17:00.998 +05:30  INF  Request finished HTTP/1.1 DELETE https://localhost:7136/books/20 - 200 null text/plain; charset=utf-8 5611.1941ms
+2024-08-02 17:29:17.535 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:29:17.592 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:29:17.595 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:29:17.596 +05:30  INF  Hosting environment: Development
+2024-08-02 17:29:17.596 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:29:21.742 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:29:22.231 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 496.4863ms
+2024-08-02 17:29:24.661 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:29:24.666 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:29:25.026 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 364.3391ms
+2024-08-02 17:29:25.173 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 506.3958ms
+2024-08-02 17:29:25.478 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:29:26.120 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 642.4372ms
+2024-08-02 17:30:00.973 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:30:00.990 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 17.0907ms
+2024-08-02 17:30:01.019 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:30:01.023 +05:30  INF  Executing endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:30:01.059 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.DBContext.GenreController (BookStore).
+2024-08-02 17:30:05.510 +05:30  INF  Executed DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:30:06.136 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:30:06.148 +05:30  INF  Executed action BookStore.DBContext.GenreController.GetGenres (BookStore) in 5081.9433ms
+2024-08-02 17:30:06.149 +05:30  INF  Executed endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:30:06.164 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 5144.9237ms
+2024-08-02 17:31:06.770 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:31:06.799 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:31:06.801 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:31:06.802 +05:30  INF  Hosting environment: Development
+2024-08-02 17:31:06.802 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:31:17.543 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:31:17.573 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:31:17.575 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:31:17.577 +05:30  INF  Hosting environment: Development
+2024-08-02 17:31:17.577 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:31:19.735 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:31:20.119 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 386.984ms
+2024-08-02 17:31:20.162 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:31:20.188 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.7898ms
+2024-08-02 17:31:20.196 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:31:20.309 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.514ms
+2024-08-02 17:31:20.690 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:31:20.956 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 275.1224ms
+2024-08-02 17:31:27.739 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:31:27.753 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 12.6957ms
+2024-08-02 17:31:27.765 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:31:27.768 +05:30  INF  Executing endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:31:27.794 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.DBContext.GenreController (BookStore).
+2024-08-02 17:31:30.319 +05:30  INF  Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:31:30.460 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:31:30.468 +05:30  INF  Executed action BookStore.DBContext.GenreController.GetGenres (BookStore) in 2668.2546ms
+2024-08-02 17:31:30.469 +05:30  INF  Executed endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:31:30.497 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 2732.5636ms
+2024-08-02 17:32:03.476 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:32:03.522 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:32:03.526 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:32:03.526 +05:30  INF  Hosting environment: Development
+2024-08-02 17:32:03.527 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:32:06.337 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:32:06.673 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 348.291ms
+2024-08-02 17:32:08.548 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:32:08.615 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:32:08.654 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 71.5818ms
+2024-08-02 17:32:09.077 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 462.034ms
+2024-08-02 17:32:09.185 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:32:09.428 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 243.7799ms
+2024-08-02 17:32:14.235 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-02 17:32:14.245 +05:30  INF  Executing endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:32:14.297 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.DBContext.GenreController (BookStore).
+2024-08-02 17:32:18.616 +05:30  INF  Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:32:19.054 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:32:19.065 +05:30  INF  Executed action BookStore.DBContext.GenreController.GetGenres (BookStore) in 4759.4204ms
+2024-08-02 17:32:19.066 +05:30  INF  Executed endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:32:19.079 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 4851.764ms
+2024-08-02 17:32:21.439 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-02 17:32:21.440 +05:30  INF  Executing endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:32:21.441 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.DBContext.GenreController (BookStore).
+2024-08-02 17:32:21.508 +05:30  INF  Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:32:21.597 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:32:21.598 +05:30  INF  Executed action BookStore.DBContext.GenreController.GetGenres (BookStore) in 156.6144ms
+2024-08-02 17:32:21.598 +05:30  INF  Executed endpoint 'BookStore.DBContext.GenreController.GetGenres (BookStore)'
+2024-08-02 17:32:21.600 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 160.5357ms
+2024-08-02 17:35:26.279 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:35:26.322 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:35:26.326 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:35:26.326 +05:30  INF  Hosting environment: Development
+2024-08-02 17:35:26.326 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:35:29.409 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:35:30.171 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 771.6806ms
+2024-08-02 17:35:30.309 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:35:30.319 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:35:30.350 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 41.4772ms
+2024-08-02 17:35:30.755 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 436.8985ms
+2024-08-02 17:35:30.872 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:35:31.073 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.6949ms
+2024-08-02 17:35:33.102 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:35:33.149 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 47.132ms
+2024-08-02 17:35:33.173 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:35:33.183 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:35:33.236 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:35:38.905 +05:30  INF  Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:35:39.355 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:35:39.366 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 6121.664ms
+2024-08-02 17:35:39.367 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:35:39.387 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 6213.8024ms
+2024-08-02 17:36:09.225 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/books - null null
+2024-08-02 17:36:09.226 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/books - 307 0 null 2.0788ms
+2024-08-02 17:36:09.235 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/books - null null
+2024-08-02 17:36:09.235 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-02 17:36:09.260 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-02 17:36:09.339 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:36:09.350 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-02 17:36:09.391 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 130.2761ms
+2024-08-02 17:36:09.391 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-02 17:36:09.391 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/books - 200 null application/json; charset=utf-8 156.8347ms
+2024-08-02 17:36:57.231 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-02 17:36:57.232 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:36:57.232 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:36:57.349 +05:30  INF  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:36:57.437 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:36:57.438 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 205.3514ms
+2024-08-02 17:36:57.438 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:36:57.438 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 207.0493ms
+2024-08-02 17:42:15.030 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:42:15.032 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 2.506ms
+2024-08-02 17:42:15.039 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:42:15.039 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:42:15.040 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:42:15.076 +05:30  INF  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-02 17:42:15.142 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 17:42:15.142 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 101.8823ms
+2024-08-02 17:42:15.142 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:42:15.143 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 104.3761ms
+2024-08-02 17:45:12.446 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:45:12.614 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:45:12.617 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:45:12.618 +05:30  INF  Hosting environment: Development
+2024-08-02 17:45:12.618 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:45:12.833 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:45:12.917 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 90.3284ms
+2024-08-02 17:45:13.098 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:45:13.108 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:45:13.145 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:45:17.064 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:45:18.021 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 957.0558ms
+2024-08-02 17:45:18.282 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:45:18.306 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:45:18.338 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 56.4221ms
+2024-08-02 17:45:18.697 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 391.4754ms
+2024-08-02 17:45:18.966 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:45:19.237 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 271.0847ms
+2024-08-02 17:45:19.620 +05:30  INF  Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-02 17:45:19.859 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-02 17:45:19.876 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 6725.4963ms
+2024-08-02 17:45:19.878 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:45:19.895 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 6796.9115ms
+2024-08-02 17:51:56.360 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 17:51:56.407 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 17:51:56.410 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:51:56.410 +05:30  INF  Hosting environment: Development
+2024-08-02 17:51:56.410 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 17:51:59.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 17:52:00.472 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 636.0691ms
+2024-08-02 17:52:00.668 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 17:52:00.668 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:52:00.683 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 15.1765ms
+2024-08-02 17:52:00.756 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.5081ms
+2024-08-02 17:52:00.974 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 17:52:01.252 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.7807ms
+2024-08-02 17:52:13.406 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 17:52:13.413 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 7.1518ms
+2024-08-02 17:52:13.457 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 17:52:13.464 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:52:13.509 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:52:17.135 +05:30  INF  Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-02 17:52:17.288 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-02 17:52:17.344 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 3817.019ms
+2024-08-02 17:52:17.345 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 17:52:17.356 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 3898.7586ms
+2024-08-02 17:52:22.284 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre/1 - null null
+2024-08-02 17:52:22.286 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre/1 - 307 0 null 1.5224ms
+2024-08-02 17:52:22.290 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre/1 - null null
+2024-08-02 17:52:22.296 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:22.324 +05:30  INF  Route matched with {action = "getGenreById", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] getGenreById(Int32) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:52:22.715 +05:30  INF  Executed DbCommand (97ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_id] = @__id_0
+2024-08-02 17:52:22.721 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 17:52:22.722 +05:30  INF  Executed action BookStore.Controllers.GenreController.getGenreById (BookStore) in 397.9092ms
+2024-08-02 17:52:22.722 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:22.723 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre/1 - 200 null application/json; charset=utf-8 432.7444ms
+2024-08-02 17:52:30.547 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre/10 - null null
+2024-08-02 17:52:30.548 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre/10 - 307 0 null 1.0924ms
+2024-08-02 17:52:30.551 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre/10 - null null
+2024-08-02 17:52:30.552 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:30.553 +05:30  INF  Route matched with {action = "getGenreById", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] getGenreById(Int32) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:52:30.700 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_id] = @__id_0
+2024-08-02 17:52:30.714 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 17:52:30.715 +05:30  INF  Executed action BookStore.Controllers.GenreController.getGenreById (BookStore) in 161.8862ms
+2024-08-02 17:52:30.715 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:30.716 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre/10 - 200 null application/json; charset=utf-8 164.8374ms
+2024-08-02 17:52:48.392 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre/11 - null null
+2024-08-02 17:52:48.393 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre/11 - 307 0 null 1.5124ms
+2024-08-02 17:52:48.400 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre/11 - null null
+2024-08-02 17:52:48.400 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:48.401 +05:30  INF  Route matched with {action = "getGenreById", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] getGenreById(Int32) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 17:52:48.496 +05:30  INF  Executed DbCommand (90ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_id] = @__id_0
+2024-08-02 17:52:48.497 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-08-02 17:52:48.502 +05:30  INF  Executed action BookStore.Controllers.GenreController.getGenreById (BookStore) in 101.3253ms
+2024-08-02 17:52:48.502 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 17:52:48.503 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre/11 - 404 null text/plain; charset=utf-8 102.7546ms
+2024-08-02 18:17:10.185 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:17:10.232 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:17:10.236 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:17:10.237 +05:30  INF  Hosting environment: Development
+2024-08-02 18:17:10.237 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:17:14.248 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:17:14.831 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 589.042ms
+2024-08-02 18:17:14.898 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:17:14.948 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:17:15.178 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 287.6477ms
+2024-08-02 18:17:15.540 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 591.5852ms
+2024-08-02 18:17:15.655 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:17:15.941 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 285.5268ms
+2024-08-02 18:18:25.622 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 35
+2024-08-02 18:18:25.630 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 8.5068ms
+2024-08-02 18:18:25.660 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 35
+2024-08-02 18:18:25.668 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:18:25.719 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:18:29.983 +05:30  INF  Executed DbCommand (191ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:18:30.330 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:18:30.345 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 4613.4651ms
+2024-08-02 18:18:30.351 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:18:30.364 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 4703.7258ms
+2024-08-02 18:20:05.385 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:20:05.536 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:20:05.538 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:20:05.539 +05:30  INF  Hosting environment: Development
+2024-08-02 18:20:05.539 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:20:09.823 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:20:10.537 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 719.9172ms
+2024-08-02 18:20:10.849 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:20:10.982 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:20:11.021 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 171.6849ms
+2024-08-02 18:20:11.193 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 221.9746ms
+2024-08-02 18:20:11.459 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:20:11.762 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 302.7801ms
+2024-08-02 18:20:16.918 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 35
+2024-08-02 18:20:16.925 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 7.3322ms
+2024-08-02 18:20:16.941 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 35
+2024-08-02 18:20:16.949 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:20:16.999 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:20:21.521 +05:30  INF  Executed DbCommand (242ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:20:21.811 +05:30  INF  Executing ConflictObjectResult, writing value of type 'System.String'.
+2024-08-02 18:20:21.826 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 4817.3525ms
+2024-08-02 18:20:21.828 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:20:21.857 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 409 null text/plain; charset=utf-8 4915.7508ms
+2024-08-02 18:21:05.040 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:21:05.042 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 3.4883ms
+2024-08-02 18:21:05.047 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:21:05.048 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:21:05.050 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:21:05.099 +05:30  INF  Executed DbCommand (6ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:21:05.132 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:21:05.133 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 82.9961ms
+2024-08-02 18:21:05.133 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:21:05.134 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 86.5602ms
+2024-08-02 18:24:40.164 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:24:40.252 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:24:40.255 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:24:40.256 +05:30  INF  Hosting environment: Development
+2024-08-02 18:24:40.256 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:24:44.374 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:24:46.693 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 2325.6949ms
+2024-08-02 18:24:47.312 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:24:47.508 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:24:47.566 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 254.6136ms
+2024-08-02 18:24:47.722 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 213.9822ms
+2024-08-02 18:24:47.980 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:24:48.212 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.9808ms
+2024-08-02 18:26:44.682 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:26:44.690 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 7.635ms
+2024-08-02 18:26:44.718 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:26:44.727 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:26:44.780 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:26:48.892 +05:30  INF  Executed DbCommand (129ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:26:49.135 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:26:49.146 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 4357.9861ms
+2024-08-02 18:26:49.147 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:26:49.165 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 4446.7797ms
+2024-08-02 18:27:27.180 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:27:27.182 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 2.0383ms
+2024-08-02 18:27:27.186 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:27:27.187 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:27:27.188 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:27:27.251 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:27:27.254 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:27:27.254 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 65.7982ms
+2024-08-02 18:27:27.255 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:27:27.256 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 69.551ms
+2024-08-02 18:27:46.119 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:27:46.183 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:27:46.186 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:27:46.186 +05:30  INF  Hosting environment: Development
+2024-08-02 18:27:46.187 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:27:51.004 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:27:51.443 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 439.3266ms
+2024-08-02 18:27:51.627 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:27:51.678 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 50.532ms
+2024-08-02 18:27:51.679 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:27:52.003 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 324.138ms
+2024-08-02 18:27:52.344 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:27:52.619 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 275.3578ms
+2024-08-02 18:28:13.913 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:28:13.920 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 6.9214ms
+2024-08-02 18:28:13.929 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:28:13.935 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:28:13.977 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:28:18.220 +05:30  INF  Executed DbCommand (173ms) [Parameters=[@__name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__name_0
+2024-08-02 18:28:18.358 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:28:18.378 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 4394.9611ms
+2024-08-02 18:28:18.379 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:28:18.434 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 4505.0364ms
+2024-08-02 18:54:13.396 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:54:13.424 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:54:13.426 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:54:13.426 +05:30  INF  Hosting environment: Development
+2024-08-02 18:54:13.426 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:54:15.987 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:54:16.554 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 568.7481ms
+2024-08-02 18:54:16.661 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:54:16.662 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:54:16.683 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 23.361ms
+2024-08-02 18:54:16.756 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.3316ms
+2024-08-02 18:54:16.981 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:54:17.198 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 216.5779ms
+2024-08-02 18:54:23.410 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:54:23.424 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 14.0476ms
+2024-08-02 18:54:23.436 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:54:23.440 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:54:23.469 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:54:24.944 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:54:24.951 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 1475.9973ms
+2024-08-02 18:54:24.951 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:54:24.959 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 1523.0956ms
+2024-08-02 18:54:52.083 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre - null null
+2024-08-02 18:54:52.083 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre - 307 0 null 0.6951ms
+2024-08-02 18:54:52.086 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre - null null
+2024-08-02 18:54:52.087 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 18:54:52.094 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:54:52.867 +05:30  INF  Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-02 18:54:52.970 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-02 18:54:52.973 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 878.5984ms
+2024-08-02 18:54:52.974 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-02 18:54:52.995 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 907.2394ms
+2024-08-02 18:55:00.740 +05:30  INF  Request starting HTTP/1.1 GET http://localhost:5192/Genre/1 - null null
+2024-08-02 18:55:00.742 +05:30  INF  Request finished HTTP/1.1 GET http://localhost:5192/Genre/1 - 307 0 null 1.3048ms
+2024-08-02 18:55:00.744 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Genre/1 - null null
+2024-08-02 18:55:00.745 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 18:55:00.757 +05:30  INF  Route matched with {action = "getGenreById", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] getGenreById(Int32) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:55:00.951 +05:30  INF  Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_id] = @__id_0
+2024-08-02 18:55:00.955 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 18:55:00.955 +05:30  INF  Executed action BookStore.Controllers.GenreController.getGenreById (BookStore) in 197.878ms
+2024-08-02 18:55:00.955 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.getGenreById (BookStore)'
+2024-08-02 18:55:00.956 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Genre/1 - 200 null application/json; charset=utf-8 211.439ms
+2024-08-02 18:56:50.306 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 18:56:50.359 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 18:56:50.363 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 18:56:50.364 +05:30  INF  Hosting environment: Development
+2024-08-02 18:56:50.364 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 18:56:50.468 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 18:56:50.820 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 352.8729ms
+2024-08-02 18:56:50.868 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 18:56:50.872 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 18:56:50.896 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 27.354ms
+2024-08-02 18:56:50.985 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.443ms
+2024-08-02 18:56:51.071 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 18:56:51.280 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.3594ms
+2024-08-02 18:57:13.079 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 18:57:13.083 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 3.9293ms
+2024-08-02 18:57:13.096 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 18:57:13.099 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:57:13.143 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 18:57:14.741 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 18:57:14.747 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 1598.4948ms
+2024-08-02 18:57:14.747 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 18:57:14.753 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 1656.8931ms
+2024-08-02 19:02:30.102 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 19:02:30.148 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 19:02:30.151 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 19:02:30.152 +05:30  INF  Hosting environment: Development
+2024-08-02 19:02:30.152 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 19:02:30.338 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 19:02:30.732 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 394.6285ms
+2024-08-02 19:02:30.754 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 19:02:30.754 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 19:02:30.761 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 7.4188ms
+2024-08-02 19:02:30.806 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.8433ms
+2024-08-02 19:02:30.924 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 19:02:31.188 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.0807ms
+2024-08-02 19:03:02.991 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 19:03:02.995 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 3.9832ms
+2024-08-02 19:03:03.004 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 19:03:03.019 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:03:03.042 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:03:05.538 +05:30  INF  Executed DbCommand (122ms) [Parameters=[@__genre_genre_name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__genre_genre_name_0
+2024-08-02 19:03:05.847 +05:30  INF  Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Genres] ([genre_name])
+OUTPUT INSERTED.[genre_id]
+VALUES (@p0);
+2024-08-02 19:03:05.914 +05:30  INF  Executing CreatedAtRouteResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 19:03:05.963 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 2909.6386ms
+2024-08-02 19:03:05.964 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:03:05.971 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-02 19:03:06.007 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 500 null text/plain; charset=utf-8 3002.4177ms
+2024-08-02 19:04:36.174 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 19:04:36.257 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 19:04:36.260 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 19:04:36.261 +05:30  INF  Hosting environment: Development
+2024-08-02 19:04:36.261 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 19:04:40.831 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 19:04:41.568 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 743.3222ms
+2024-08-02 19:04:45.133 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 19:04:45.141 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 19:04:45.467 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 333.835ms
+2024-08-02 19:04:45.579 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 438.2892ms
+2024-08-02 19:04:45.834 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 19:04:46.084 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 250.1958ms
+2024-08-02 19:04:50.200 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 19:04:50.209 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 12.3575ms
+2024-08-02 19:04:50.275 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 19:04:50.281 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:04:50.461 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:06:42.422 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 19:06:42.483 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 19:06:42.487 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 19:06:42.487 +05:30  INF  Hosting environment: Development
+2024-08-02 19:06:42.487 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 19:06:47.229 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 19:06:47.656 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 437.4934ms
+2024-08-02 19:06:47.926 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 19:06:48.070 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 144.3635ms
+2024-08-02 19:06:48.072 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 19:06:48.425 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 353.6927ms
+2024-08-02 19:06:48.689 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 19:06:49.045 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.9053ms
+2024-08-02 19:07:01.165 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Genre - application/json 30
+2024-08-02 19:07:01.201 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:07:01.286 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:08:47.435 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 19:08:47.501 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 19:08:47.505 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 19:08:47.505 +05:30  INF  Hosting environment: Development
+2024-08-02 19:08:47.506 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 19:08:51.194 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 19:08:51.735 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 549.5511ms
+2024-08-02 19:08:53.272 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 19:08:53.287 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 19:08:53.458 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 186.2944ms
+2024-08-02 19:08:53.741 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 453.7577ms
+2024-08-02 19:08:54.354 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 19:08:54.682 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 327.6223ms
+2024-08-02 19:09:08.097 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Genre - application/json 30
+2024-08-02 19:09:08.113 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:09:08.161 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:09:38.518 +05:30  INF  Executed DbCommand (117ms) [Parameters=[@__genre_genre_name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__genre_genre_name_0
+2024-08-02 19:09:58.234 +05:30  INF  Executed DbCommand (57ms) [Parameters=[@p0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Genres] ([genre_name])
+OUTPUT INSERTED.[genre_id]
+VALUES (@p0);
+2024-08-02 19:10:14.087 +05:30  INF  Executing CreatedAtRouteResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 19:10:14.145 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 65964.4173ms
+2024-08-02 19:10:14.147 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:10:14.151 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-02 19:10:14.184 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Genre - 500 null text/plain; charset=utf-8 66086.8792ms
+2024-08-02 19:11:57.548 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 19:11:57.555 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 6.8494ms
+2024-08-02 19:11:57.564 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 19:11:57.565 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:11:57.565 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:12:06.904 +05:30  INF  Executed DbCommand (337ms) [Parameters=[@__genre_genre_name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__genre_genre_name_0
+2024-08-02 19:12:24.844 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-02 19:12:24.851 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 27285.147ms
+2024-08-02 19:12:24.851 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:12:24.852 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 400 null text/plain; charset=utf-8 27287.0156ms
+2024-08-02 19:20:44.039 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-02 19:20:44.083 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-02 19:20:44.089 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 19:20:44.089 +05:30  INF  Hosting environment: Development
+2024-08-02 19:20:44.089 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-02 19:20:48.309 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-02 19:20:48.848 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 549.6783ms
+2024-08-02 19:20:49.220 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 19:20:49.608 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 388.2856ms
+2024-08-02 19:20:49.610 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-02 19:20:49.716 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.5576ms
+2024-08-02 19:20:50.088 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-02 19:20:50.390 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 302.0303ms
+2024-08-02 19:21:36.270 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 31
+2024-08-02 19:21:36.285 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 15.248ms
+2024-08-02 19:21:36.354 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 31
+2024-08-02 19:21:36.361 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:21:36.414 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:21:40.747 +05:30  INF  Executed DbCommand (311ms) [Parameters=[@__genre_genre_name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__genre_genre_name_0
+2024-08-02 19:21:41.381 +05:30  INF  Executed DbCommand (155ms) [Parameters=[@p0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Genres] ([genre_name])
+OUTPUT INSERTED.[genre_id]
+VALUES (@p0);
+2024-08-02 19:21:53.508 +05:30  INF  Executing CreatedAtRouteResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 19:21:53.664 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 17243.7744ms
+2024-08-02 19:21:53.665 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:21:53.679 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 201 null application/json; charset=utf-8 17325.2722ms
+2024-08-02 19:22:32.729 +05:30  INF  Request starting HTTP/1.1 POST http://localhost:5192/Genre - application/json 30
+2024-08-02 19:22:32.731 +05:30  INF  Request finished HTTP/1.1 POST http://localhost:5192/Genre - 307 0 null 2.3681ms
+2024-08-02 19:22:32.734 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7136/Genre - application/json 30
+2024-08-02 19:22:32.734 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:22:32.735 +05:30  INF  Route matched with {action = "CreateGenre", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Genre]] CreateGenre(BookStore.Models.Genre) on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-02 19:22:32.781 +05:30  INF  Executed DbCommand (8ms) [Parameters=[@__genre_genre_name_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+WHERE [g].[genre_name] = @__genre_genre_name_0
+2024-08-02 19:22:32.788 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Genres] ([genre_name])
+OUTPUT INSERTED.[genre_id]
+VALUES (@p0);
+2024-08-02 19:22:32.789 +05:30  INF  Executing CreatedAtRouteResult, writing value of type 'BookStore.Models.Genre'.
+2024-08-02 19:22:32.790 +05:30  INF  Executed action BookStore.Controllers.GenreController.CreateGenre (BookStore) in 55.1551ms
+2024-08-02 19:22:32.790 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.CreateGenre (BookStore)'
+2024-08-02 19:22:32.791 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7136/Genre - 201 null application/json; charset=utf-8 57.13ms
