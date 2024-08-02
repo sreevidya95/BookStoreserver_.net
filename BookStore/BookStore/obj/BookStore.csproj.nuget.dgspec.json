@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj": {}
+    "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj": {
+    "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj",
+        "projectPath": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj",
         "packagesPath": "D:\\Users\\sreevidya\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\BookStoreserver_.net\\BookStore\\BookStore\\obj\\",
+        "outputPath": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\sreevidya\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,6 +63,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

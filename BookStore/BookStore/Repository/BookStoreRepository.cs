@@ -1,8 +1,8 @@
 ﻿using BookStore.DBContext;
 using BookStore.Entities;
 using BookStore.Migrations;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 namespace BookStore.Repository
 {
     public class BookStoreRepository : IBookStoreRepository
@@ -12,14 +12,19 @@ namespace BookStore.Repository
         public BookStoreRepository(BookStoreDbContext bookStoreDb) {
             this.bookStoreDb = bookStoreDb;
         }
+         
         public  Task<Books> CreateBooksAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> DeleteBooksAsync(int id)
+        public async Task DeleteBooksAsync(int id)
         {
-            throw new NotImplementedException();
+            var books = await GetBooksByIdAsync(id);
+            if (books != null)
+            {
+                bookStoreDb.Remove(books);
+            }
         }
 
         public async Task<IEnumerable<Books>> GetBooksasync()
@@ -72,7 +77,7 @@ namespace BookStore.Repository
                               offerOfferId = book.offerOfferId
                           }).FirstOrDefaultAsync();
         }
-
+        
         public async Task<bool> SyncDb()
         {
             return await bookStoreDb.SaveChangesAsync() > 0;
