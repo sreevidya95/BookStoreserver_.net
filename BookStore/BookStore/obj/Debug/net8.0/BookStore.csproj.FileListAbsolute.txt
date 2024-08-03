@@ -284,3 +284,5 @@ D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Deb
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

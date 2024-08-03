@@ -1,9 +1,12 @@
-﻿using BookStore.DBContext;
+﻿using BCrypt.Net;
+using BookStore.DBContext;
 using BookStore.Entities;
 using BookStore.Migrations;
+using BookStore.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 namespace BookStore.Repository
 {
     public class BookStoreRepository : IBookStoreRepository
@@ -12,11 +15,6 @@ namespace BookStore.Repository
 
         public BookStoreRepository(BookStoreDbContext bookStoreDb) {
             this.bookStoreDb = bookStoreDb;
-        }
-         
-        public  Task<Books> CreateBooksAsync()
-        {
-            throw new NotImplementedException();
         }
 
         public async Task DeleteBooksAsync(int id)
@@ -28,7 +26,7 @@ namespace BookStore.Repository
             }
         }
 
-        public async Task<IEnumerable<Books>> GetBooksasync()
+        public async Task<IEnumerable<Entities.Books>> GetBooksasync()
         {
             return await (from book in bookStoreDb.Books
                           join auth in bookStoreDb.Authors
@@ -36,7 +34,7 @@ namespace BookStore.Repository
                           join g in bookStoreDb.Genres
                           on book.GenreGenreId equals g.genre_id
                           orderby book.UpdatedAt descending
-                          select new Books()
+                          select new Entities.Books()
                           {
                               book_id = book.book_id,
                               title = book.title,
@@ -53,7 +51,7 @@ namespace BookStore.Repository
                           }).ToListAsync();
         }
 
-        public async Task<Books?> GetBooksByIdAsync(int id)
+        public async Task<Entities.Books?> GetBooksByIdAsync(int id)
         {
             return await (from book in bookStoreDb.Books
                           join auth in bookStoreDb.Authors
@@ -62,7 +60,7 @@ namespace BookStore.Repository
                           on book.GenreGenreId equals g.genre_id
                           orderby book.UpdatedAt descending
                           where (book.book_id == id)
-                          select new Books()
+                          select new Entities.Books()
                           {
                               book_id = book.book_id,
                               title = book.title,
@@ -95,16 +93,52 @@ namespace BookStore.Repository
             }
 
         }
-        public async Task<IEnumerable<Genre>> GetGenresAsync()
+        public async Task<IEnumerable<Entities.Genre>> GetGenresAsync()
         {
 
             return await bookStoreDb.Genres.ToListAsync();
 
         }
 
-        public async Task<Genre?> GetGenresByIdAsync(int id)
+        public async Task<Entities.Genre?> GetGenresByIdAsync(int id)
         {
             return await bookStoreDb.Genres.Where(x => x.genre_id == id).FirstOrDefaultAsync();
+        }
+        public async Task<IEnumerable<Entities.Author>> GetAuthorAsync()
+        {
+            return await bookStoreDb.Authors.ToListAsync();
+
+        }
+        public async Task<Entities.Author?> GetAuthorByIdAsync(int id)
+        {
+            return await bookStoreDb.Authors.Where(x => x.author_id == id).FirstOrDefaultAsync();
+        }
+        public async  Task DeleteAuthorAsync(int id)
+        {
+            var author = await GetAuthorByIdAsync(id);
+            if (author != null)
+            {
+                var books = await bookStoreDb.Books.Where(x => x.AuthorAuthorId == id).FirstOrDefaultAsync();
+                if (books == null)
+                {
+                    bookStoreDb.Remove(author);
+                }
+            }
+        }
+        
+        public async Task CreateAdminAsync(Entities.Admin admin)
+        {
+            var adminConfirmation = await LoginAdmin(admin.email);
+            if (adminConfirmation == null)
+            {
+                bookStoreDb.Admins.Add(admin);
+            }
+
+        }
+        public async Task<Entities.Admin?> LoginAdmin(string email)
+        {
+            return await bookStoreDb.Admins.Where(x => x.email == email)
+                   .FirstOrDefaultAsync();
         }
     }
 

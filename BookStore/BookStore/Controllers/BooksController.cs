@@ -76,7 +76,7 @@ namespace BookStore.Controllers
                 if (changes == true)
                 {
                     log.LogInformation($"A book with id '{id}' is delete");
-                    return Ok("Deleted Successfully");
+                    return NoContent();
                 }
                 else
                 {
@@ -88,7 +88,7 @@ namespace BookStore.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        //have to implement add book and update book
+        //have to implement post and put
         
     }
 }

@@ -81,6 +81,7 @@ namespace BookStore.Controllers
                 if (value == true)
                     {
                        var newGenreModel = mapper.Map<Models.Genre>(newGenre);
+                    logger.LogInformation($"added Genere {newGenreModel.genre_name}");
                     return CreatedAtRoute("getGenre", new
                     {
                         id = newGenreModel.genre_id
