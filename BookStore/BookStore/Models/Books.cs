@@ -11,7 +11,7 @@ namespace BookStore.Models
         public string? title { get; set; }
          public decimal price { get; set; }
         public DateTime publication_date { get; set; }
-        public string? book_image { get; set; } = null;
+        public byte[]? book_image { get; set; } = null;
         public Author? Author { get; set; }
         public int AuthorAuthorId { get; set; }
         public Genre? Genre { get; set; }

@@ -105,10 +105,11 @@ namespace BookStore.Controllers
                     {
                    
                        var authorModel = mapper.Map<Models.Author>(authorEntity);
-                    return CreatedAtRoute("getAuthor", new
-                    {
-                        id = authorModel.author_id
-                    }, authorModel);
+                       logger.LogInformation($"The Author '{authorModel.name}' is added");
+                        return CreatedAtRoute("getAuthor", new
+                        {
+                            id = authorModel.author_id
+                        }, authorModel);
                    
                     }
                     else
@@ -138,11 +139,12 @@ namespace BookStore.Controllers
                         bool updated = await bookStore.SyncDb();
                         if (updated == true)
                         {
-                            return Ok("Updated Successfully");
+                                logger.LogInformation($"The Author with id '{authorCurrent.author_id}' is updated");
+                                return Ok("Updated Successfully");
                         }
                         else
                         {
-                        return Ok("seems like no changes are made to update");
+                            return Ok("seems like no changes are made to update");
                         }
                     }
                 }catch(Exception ex)

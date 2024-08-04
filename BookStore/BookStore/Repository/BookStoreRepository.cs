@@ -76,7 +76,10 @@ namespace BookStore.Repository
                               offerOfferId = book.offerOfferId
                           }).FirstOrDefaultAsync();
         }
-        
+        public async Task<Entities.Books?> GetOnlyBooksAsync(int id)
+        {
+            return await bookStoreDb.Books.Where(x => x.book_id == id).FirstOrDefaultAsync();
+        }
         public async Task<bool> SyncDb()
         {
             return await bookStoreDb.SaveChangesAsync() > 0;
@@ -106,7 +109,7 @@ namespace BookStore.Repository
         }
         public async Task<IEnumerable<Entities.Author>> GetAuthorAsync()
         {
-            return await bookStoreDb.Authors.ToListAsync();
+            return await bookStoreDb.Authors.OrderByDescending(x=>x.UpdatedAt).ToListAsync();
 
         }
         public async Task<Entities.Author?> GetAuthorByIdAsync(int id)
@@ -151,6 +154,17 @@ namespace BookStore.Repository
                 bookStoreDb.Authors.Add(author);
             }
         }
+        public async Task CreateBook(Entities.Books book)
+        {
+            var books = await bookStoreDb.Books.Where(x=>x.title == book.title 
+            && x.AuthorAuthorId == book.AuthorAuthorId && x.
+            GenreGenreId == book.GenreGenreId).FirstOrDefaultAsync();
+            if (books == null)
+            {
+                Console.WriteLine("Adding");
+                bookStoreDb.Books.Add(book);
+            }
+        }
         /*public IFormFile GetFile(byte[] data)
         {
             using (var stream = new MemoryStream(data))
@@ -168,6 +182,31 @@ namespace BookStore.Repository
                 file.ContentDisposition = cd.ToString();
                 return file;
             }*/
+        public async Task<IEnumerable<Entities.Enquiry>> GetEnquiry()
+        {
+            return await bookStoreDb.Enquiries.ToListAsync();
+        }
+        public async Task CreateEnquiry(Entities.Enquiry enquiry)
+        {
+            var Enq = await bookStoreDb.Enquiries.Where(x => x.user_email == enquiry.user_email
+            && x.message == enquiry.message).FirstOrDefaultAsync();
+            if (Enq == null)
+            {
+                bookStoreDb.Add(enquiry);
+            }
+        }
+        public async Task DeleteEnquiry(int id)
+        {
+            var enquiry = await GetEnquiryById(id);
+            if (enquiry != null)
+            {
+                bookStoreDb.Remove(enquiry);
+            }
+        }
+        public async Task<Entities.Enquiry?> GetEnquiryById(int id)
+        {
+            return await bookStoreDb.Enquiries.Where(x => x.enq_id == id).FirstOrDefaultAsync();
+        }
     }
             
 }

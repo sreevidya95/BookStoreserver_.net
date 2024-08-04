@@ -13,6 +13,8 @@ namespace BookStore.profile
             CreateMap<Entities.Admin, Models.AdminEmail>();
             CreateMap<Entities.Admin, Models.Admin>().ReverseMap();
             CreateMap<Models.UpdateAuthor,Entities.Author>();
+            CreateMap<Models.UpdateBook,Entities.Books>();
+            CreateMap<Models.Entity, Entities.Enquiry>().ReverseMap();
 
         }
     }

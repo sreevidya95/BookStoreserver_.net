@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookStore.Models;
 using BookStore.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage.Json;
@@ -41,7 +42,7 @@ namespace BookStore.Controllers
             }
         }
         //getting specific book
-        [HttpGet("{id}")]
+        [HttpGet("{id}",Name ="getBook")]
         public async Task<ActionResult<Models.Books?>> GetBooksById(int id)
         {
             try
@@ -88,7 +89,70 @@ namespace BookStore.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        //have to implement post and put
-        
+        [HttpPost]
+        public async Task<ActionResult<Models.Books>> CreateBook(UpdateBook book)
+        {
+            try
+            {
+
+                var bookEntity = mapper.Map<Entities.Books>(book);
+
+                await bookStore.CreateBook(bookEntity);
+                bool added = await bookStore.SyncDb();
+                if (added == true)
+                {
+
+                    var bookModel = mapper.Map<Models.Books>(bookEntity);
+                    log.LogInformation($"The Book '{bookModel.title}' is added");
+                    return CreatedAtRoute("getBook", new
+                    {
+                        id = bookModel.book_id
+                    }, bookModel);
+
+                }
+                else
+                {
+                    return Ok("Book already Exists");
+                }
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+        }
+        //not working
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateBook(int id, UpdateBook book)
+        {
+            try
+            {
+                var bookCurrent = await bookStore.GetOnlyBooksAsync(id);
+                if (bookCurrent == null)
+                {
+                    return NotFound("Invalid Book");
+                }
+                else
+                {
+                    mapper.Map(book,bookCurrent);
+                    bool updated = await bookStore.SyncDb();
+                    if (updated == true)
+                    {
+                        log.LogInformation($"The Book with id '{bookCurrent.book_id}' is updated");
+                        return Ok("Book Updated Successfully");
+                    }
+                    else
+                    {
+                        return Ok("seems like no changes are made to update");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

@@ -18,8 +18,7 @@ namespace BookStore.Entities
         [Required]
         [Column(TypeName = "date")]
         public DateTime publication_date { get; set; }
-        [DataType(DataType.ImageUrl)]
-        public string? book_image { get; set; } = null;
+        public byte[]? book_image { get; set; } = null;
         [ForeignKey("AuthorAuthorId")]
         [Required]
         public Author? Author { get; set; }
