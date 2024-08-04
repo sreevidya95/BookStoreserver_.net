@@ -12,8 +12,9 @@ namespace BookStore.Models
         
         public string? biography { get; set; }
         
-        public string? author_image { get; set; } = null;
-        
+        public byte[]? author_image { get; set; } = null;
+
+       
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         
         public DateTime UpdatedAt { get; set; } = DateTime.Now;

@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\repository\\ibookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\ibookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\repository\\bookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\bookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\models\\updateauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\updateauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\profile\\bookstoreinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\profile\\bookstoreinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\models\\adminemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\adminemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\repository\\bookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\bookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\repository\\ibookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\repository\\ibookstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\migrations\\20240804065120_bookstore4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\migrations\\20240804065120_bookstore4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064717_bookstore3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookStore\\Migrations\\20240804064717_bookstore3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\migrations\\20240804064332_authordatatypechanging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\migrations\\20240804064332_authordatatypechanging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\bookstore.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -63,16 +87,8 @@
       "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\dbcontext\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\dbcontext\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -112,6 +128,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\migrations\\20240802051249_bookstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\migrations\\20240802051249_bookstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|d:\\users\\sreevidya\\source\\repos\\bookstoreserver_.net\\bookstore\\bookstore\\migrations\\20240804064012_authordatatypechanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E463057-273D-41BE-846E-2CE4A0D039BE}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\migrations\\20240804064012_authordatatypechanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -121,11 +141,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "UpdateAuthor.cs",
+              "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\UpdateAuthor.cs",
+              "RelativeDocumentMoniker": "BookStore\\Models\\UpdateAuthor.cs",
+              "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\UpdateAuthor.cs",
+              "RelativeToolTip": "BookStore\\Models\\UpdateAuthor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T09:22:08.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240804065120_bookstore4.cs",
+              "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804065120_bookstore4.cs",
+              "RelativeDocumentMoniker": "BookStore\\Migrations\\20240804065120_bookstore4.cs",
+              "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804065120_bookstore4.cs",
+              "RelativeToolTip": "BookStore\\Migrations\\20240804065120_bookstore4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:51:20.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240804064717_bookstore3.cs",
+              "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064717_bookstore3.cs",
+              "RelativeDocumentMoniker": "BookStore\\Migrations\\20240804064717_bookstore3.cs",
+              "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064717_bookstore3.cs",
+              "RelativeToolTip": "BookStore\\Migrations\\20240804064717_bookstore3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:47:18.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240804064332_authordatatypechanging.cs",
+              "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064332_authordatatypechanging.cs",
+              "RelativeDocumentMoniker": "BookStore\\Migrations\\20240804064332_authordatatypechanging.cs",
+              "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064332_authordatatypechanging.cs",
+              "RelativeToolTip": "BookStore\\Migrations\\20240804064332_authordatatypechanging.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:43:33.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20240804064012_authordatatypechanged.cs",
+              "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064012_authordatatypechanged.cs",
+              "RelativeDocumentMoniker": "BookStore\\Migrations\\20240804064012_authordatatypechanged.cs",
+              "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240804064012_authordatatypechanged.cs",
+              "RelativeToolTip": "BookStore\\Migrations\\20240804064012_authordatatypechanged.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:40:12.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdminEmail.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\AdminEmail.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\AdminEmail.cs",
@@ -138,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "BookStore.http",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.http",
               "RelativeDocumentMoniker": "BookStore\\BookStore.http",
@@ -146,12 +229,11 @@
               "RelativeToolTip": "BookStore\\BookStore.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-03T11:08:29.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T11:08:29.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\EmailSettings.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\EmailSettings.cs",
@@ -159,12 +241,11 @@
               "RelativeToolTip": "BookStore\\Repository\\EmailSettings.cs",
               "ViewState": "AQIAAAYAAADSzMzMzAw5wBYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:30:20.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T10:30:20.38Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "IEmailSettings.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\IEmailSettings.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\IEmailSettings.cs",
@@ -172,25 +253,24 @@
               "RelativeToolTip": "BookStore\\Repository\\IEmailSettings.cs",
               "ViewState": "AQIAAAMAAAAgMzMzM7MtwAkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T10:20:36.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T10:20:36.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "BookStore\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\AdminController.cs",
               "RelativeToolTip": "BookStore\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAI4AAADAx8zMzIwwwJgAAAAkAAAA",
+              "ViewState": "AQIAAI0AAADUkpmZmdkswJkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-03T08:19:56.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\Admin.cs",
@@ -202,32 +282,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "BookStore\\Controllers\\AuthorController.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\AuthorController.cs",
               "RelativeToolTip": "BookStore\\Controllers\\AuthorController.cs",
-              "ViewState": "AQIAAEYAAABA6v///38UwFYAAAArAAAA",
+              "ViewState": "AQIAAHsAAACA0MzMzAwmwIEAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-03T06:08:15.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "Author.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\Author.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\Author.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\Author.cs",
               "RelativeToolTip": "BookStore\\Models\\Author.cs",
-              "ViewState": "AQIAAAoAAAAgm5mZmfk3wBEAAAAIAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T05:20:06.577Z"
+              "WhenOpened": "2024-08-03T05:20:06.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "GenreController.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "BookStore\\Controllers\\GenreController.cs",
@@ -239,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Genre.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\Genre.cs",
@@ -251,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\appsettings.json",
               "RelativeDocumentMoniker": "BookStore\\appsettings.json",
@@ -263,20 +344,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "BookstoreInfo.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\profile\\BookstoreInfo.cs",
               "RelativeDocumentMoniker": "BookStore\\profile\\BookstoreInfo.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\profile\\BookstoreInfo.cs",
               "RelativeToolTip": "BookStore\\profile\\BookstoreInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "ViewState": "AQIAAAMAAAAAAgAAAIAZwA4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T07:11:18.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "BooksController.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "BookStore\\Controllers\\BooksController.cs",
@@ -288,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Books.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Models\\Books.cs",
               "RelativeDocumentMoniker": "BookStore\\Models\\Books.cs",
@@ -300,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "20240802062300_bookstore2.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240802062300_bookstore2.cs",
               "RelativeDocumentMoniker": "BookStore\\Migrations\\20240802062300_bookstore2.cs",
@@ -312,20 +393,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BookStoreRepository.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\BookStoreRepository.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\BookStoreRepository.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\BookStoreRepository.cs",
               "RelativeToolTip": "BookStore\\Repository\\BookStoreRepository.cs",
-              "ViewState": "AQIAAIoAAACAGAAAAAAQwBEAAAAJAAAA",
+              "ViewState": "AQIAAFYAAACAWmZmZqYuwIoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T06:12:13.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "GymInfoRepository.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\CsharpExercises\\LocalGym\\LocalGym\\Services\\GymInfoRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\CsharpExercises\\LocalGym\\LocalGym\\Services\\GymInfoRepository.cs",
@@ -337,20 +418,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "IBookStoreRepository.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\IBookStoreRepository.cs",
               "RelativeDocumentMoniker": "BookStore\\Repository\\IBookStoreRepository.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Repository\\IBookStoreRepository.cs",
               "RelativeToolTip": "BookStore\\Repository\\IBookStoreRepository.cs",
-              "ViewState": "AQIAABAAAADgYWZmZqYkwBYAAAAHAAAA",
+              "ViewState": "AQIAABAAAADwMDMzM1M3wBgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T05:50:49.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "20240802051249_bookstore.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Migrations\\20240802051249_bookstore.cs",
               "RelativeDocumentMoniker": "BookStore\\Migrations\\20240802051249_bookstore.cs",
@@ -362,20 +443,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Program.cs",
               "RelativeDocumentMoniker": "BookStore\\Program.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Program.cs",
               "RelativeToolTip": "BookStore\\Program.cs",
-              "ViewState": "AQIAAAQAAADAl5mZmRkXwB4AAAAFAAAA",
+              "ViewState": "AQIAAAUAAABAAAAAAIAhwB4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T05:05:45.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "BookStoreDbContext.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\DBContext\\BookStoreDbContext.cs",
               "RelativeDocumentMoniker": "BookStore\\DBContext\\BookStoreDbContext.cs",
@@ -387,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Enquiry.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Enquiry.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Enquiry.cs",
@@ -399,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Offer.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Offer.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Offer.cs",
@@ -411,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Admin.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Admin.cs",
@@ -423,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Genre.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Genre.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Genre.cs",
@@ -435,19 +516,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Author.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Author.cs",
               "ToolTip": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Author.cs",
               "RelativeToolTip": "BookStore\\Entities\\Author.cs",
-              "ViewState": "AQIAAA4AAADAZ2ZmZuYdwBcAAAA/AAAA",
+              "ViewState": "AQIAAAAAAADAZmZmZiYiwBIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T15:08:09.462Z"
+              "WhenOpened": "2024-07-31T15:08:09.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Books.cs",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\Entities\\Books.cs",
               "RelativeDocumentMoniker": "BookStore\\Entities\\Books.cs",
@@ -459,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "BookStore.csproj",
               "DocumentMoniker": "D:\\Users\\sreevidya\\source\\repos\\BookStoreserver_.net\\BookStore\\BookStore\\BookStore.csproj",
               "RelativeDocumentMoniker": "BookStore\\BookStore.csproj",

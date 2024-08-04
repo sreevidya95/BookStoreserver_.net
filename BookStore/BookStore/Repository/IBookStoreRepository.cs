@@ -20,8 +20,9 @@ namespace BookStore.Repository
         public Task CreateAdminAsync(Entities.Admin admin);
        
         public Task<Admin?> LoginAdmin(string email);
-       
+       public Task CreateAuthor(Entities.Author author);
         public Task<bool> SyncDb();
+        //public IFormFile GetFile(byte[] data);
 
     }
 }

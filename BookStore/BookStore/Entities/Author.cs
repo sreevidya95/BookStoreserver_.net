@@ -16,8 +16,7 @@ namespace BookStore.Entities
         [MaxLength(200)]
         [Column(TypeName = "varchar")]
         public string? biography { get; set; }
-        [DataType(DataType.ImageUrl)]
-        public string? author_image { get; set; } = null;
+        public byte[]? author_image { get; set; } = null;
         [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         [Required]

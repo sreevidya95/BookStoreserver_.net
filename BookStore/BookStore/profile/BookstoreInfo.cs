@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookStore.Models;
 
 namespace BookStore.profile
 {
@@ -11,6 +12,7 @@ namespace BookStore.profile
             CreateMap<Entities.Author, Models.Author>().ReverseMap();
             CreateMap<Entities.Admin, Models.AdminEmail>();
             CreateMap<Entities.Admin, Models.Admin>().ReverseMap();
+            CreateMap<Models.UpdateAuthor,Entities.Author>();
 
         }
     }

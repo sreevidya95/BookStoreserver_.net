@@ -140,8 +140,38 @@ namespace BookStore.Repository
             return await bookStoreDb.Admins.Where(x => x.email == email)
                    .FirstOrDefaultAsync();
         }
+        public async Task CreateAuthor(Entities.Author author)
+        {
+
+            var newAuthor = await bookStoreDb.Authors.Where(x =>
+            x.name == author.name && x.biography == author.biography).FirstOrDefaultAsync();
+
+            if (newAuthor == null)
+            {
+                bookStoreDb.Authors.Add(author);
+            }
+        }
+        /*public IFormFile GetFile(byte[] data)
+        {
+            using (var stream = new MemoryStream(data))
+            {
+                var file = new FormFile(stream, 0, data.Length,"author_image","author_image")
+                {
+                    Headers = new HeaderDictionary(),
+                    ContentType = "text/html",
+                };
+
+                System.Net.Mime.ContentDisposition cd = new System.Net.Mime.ContentDisposition
+                {
+                    FileName = file.FileName
+                };
+                file.ContentDisposition = cd.ToString();
+                return file;
+            }*/
     }
+            
+}
 
         
-}
+
 

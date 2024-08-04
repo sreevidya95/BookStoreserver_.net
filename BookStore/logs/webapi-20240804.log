@@ -1,0 +1,1052 @@
+2024-08-04 12:10:32.140 +05:30  INF  Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:10:32.248 +05:30  INF  Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:10:32.251 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:10:32.252 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:10:32.313 +05:30  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-04 12:10:32.338 +05:30  INF  Applying migration '20240804064012_authordatatypechanged'.
+2024-08-04 12:10:32.564 +05:30  ERR  Failed executing DbCommand (124ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Authors]') AND [c].[name] = N'author_image');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Authors] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Authors] ALTER COLUMN [author_image] varbinary(max) NULL;
+2024-08-04 12:15:35.183 +05:30  INF  Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:15:35.249 +05:30  INF  Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:15:35.252 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:15:35.253 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:15:35.284 +05:30  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-04 12:15:35.301 +05:30  INF  Applying migration '20240804064012_authordatatypechanged'.
+2024-08-04 12:15:35.444 +05:30  ERR  Failed executing DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Authors]') AND [c].[name] = N'author_image');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Authors] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Authors] ALTER COLUMN [author_image] varbinary(max) NULL;
+2024-08-04 12:17:32.935 +05:30  INF  Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:17:33.015 +05:30  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:17:33.025 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:17:33.027 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:17:33.069 +05:30  INF  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-04 12:17:33.090 +05:30  INF  Applying migration '20240804064012_authordatatypechanged'.
+2024-08-04 12:17:33.251 +05:30  ERR  Failed executing DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Authors]') AND [c].[name] = N'author_image');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Authors] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Authors] ALTER COLUMN [author_image] varbinary(max) NULL;
+2024-08-04 12:21:34.861 +05:30  INF  Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:21:34.932 +05:30  INF  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:21:34.935 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-04 12:21:34.936 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-04 12:21:34.963 +05:30  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-04 12:21:34.979 +05:30  INF  Applying migration '20240804064012_authordatatypechanged'.
+2024-08-04 12:21:35.203 +05:30  INF  Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Authors]') AND [c].[name] = N'author_image');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Authors] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Authors] ALTER COLUMN [author_image] varbinary(max) NULL;
+2024-08-04 12:21:35.207 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240804064012_authordatatypechanged', N'8.0.7');
+2024-08-04 12:21:35.216 +05:30  INF  Applying migration '20240804064332_authordatatypechanging'.
+2024-08-04 12:21:35.260 +05:30  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Authors]') AND [c].[name] = N'author_image');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Authors] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Authors] DROP COLUMN [author_image];
+2024-08-04 12:21:35.261 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240804064332_authordatatypechanging', N'8.0.7');
+2024-08-04 12:21:35.263 +05:30  INF  Applying migration '20240804064717_bookstore3'.
+2024-08-04 12:21:35.281 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240804064717_bookstore3', N'8.0.7');
+2024-08-04 12:21:35.283 +05:30  INF  Applying migration '20240804065120_bookstore4'.
+2024-08-04 12:21:35.312 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Authors] ADD [author_image] varbinary(max) NULL;
+2024-08-04 12:21:35.313 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240804065120_bookstore4', N'8.0.7');
+2024-08-04 12:44:06.906 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 12:44:07.536 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 12:44:07.536 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 12:44:07.539 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 12:44:07.540 +05:30  INF  Hosting environment: Development
+2024-08-04 12:44:07.540 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 12:44:14.765 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 12:44:17.323 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 2572.9024ms
+2024-08-04 12:44:17.381 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 12:44:17.702 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 320.1951ms
+2024-08-04 12:44:17.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 12:44:18.035 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 331.9801ms
+2024-08-04 12:44:18.332 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 12:44:18.616 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 283.9521ms
+2024-08-04 12:46:27.348 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Author?name=sdasdasd&biography=sadsdsdfjsdjhf8weouijfduiwehfduiwehdfo8wede - multipart/form-data; boundary=----WebKitFormBoundarykRp2rBAZA8r98QkA 12423
+2024-08-04 12:46:27.375 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:46:27.417 +05:30  INF  Route matched with {action = "CreateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] CreateAuthor(BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:46:28.630 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 12:46:28.638 +05:30  INF  Executed action BookStore.Controllers.AuthorController.CreateAuthor (BookStore) in 1213.6944ms
+2024-08-04 12:46:28.638 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:46:28.643 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Author?name=sdasdasd&biography=sadsdsdfjsdjhf8weouijfduiwehfduiwehdfo8wede - 400 null text/plain; charset=utf-8 1295.2118ms
+2024-08-04 12:54:27.980 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 12:54:28.908 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 12:54:28.909 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 12:54:28.912 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 12:54:28.913 +05:30  INF  Hosting environment: Development
+2024-08-04 12:54:28.913 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 12:54:33.207 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 12:54:34.165 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 968.9943ms
+2024-08-04 12:54:37.330 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 12:54:37.360 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 12:54:37.490 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 158.6152ms
+2024-08-04 12:54:37.728 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 367.8545ms
+2024-08-04 12:54:37.913 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 12:54:38.162 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 248.3698ms
+2024-08-04 12:55:13.244 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Author?name=sree&biography=dsfsdfdfvnefkjelrknvlekrflkervlkejfvklelrnlkerflkerflkerf - multipart/form-data; boundary=----WebKitFormBoundarysotGbBZUThvOgNWM 12423
+2024-08-04 12:55:13.259 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:55:13.336 +05:30  INF  Route matched with {action = "CreateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] CreateAuthor(BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:55:17.770 +05:30  INF  Executed DbCommand (542ms) [Parameters=[@__author_name_0='?' (Size = 50) (DbType = AnsiString), @__author_biography_1='?' (Size = 200) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[name] = @__author_name_0 AND [a].[biography] = @__author_biography_1
+2024-08-04 12:55:18.310 +05:30  INF  Executed DbCommand (134ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = -1) (DbType = Binary), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([CreatedAt], [UpdatedAt], [author_image], [biography], [name])
+OUTPUT INSERTED.[author_id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-04 12:55:18.600 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 12:55:18.611 +05:30  INF  Executed action BookStore.Controllers.AuthorController.CreateAuthor (BookStore) in 5266.6444ms
+2024-08-04 12:55:18.612 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:55:18.625 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Author?name=sree&biography=dsfsdfdfvnefkjelrknvlekrflkervlkejfvklelrnlkerflkerflkerf - 400 null text/plain; charset=utf-8 5381.388ms
+2024-08-04 12:55:58.221 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 12:55:58.606 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 12:55:58.606 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 12:55:58.610 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 12:55:58.610 +05:30  INF  Hosting environment: Development
+2024-08-04 12:55:58.611 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 12:56:04.700 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 12:56:05.316 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 629.6581ms
+2024-08-04 12:56:05.613 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 12:56:06.034 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 12:56:06.039 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 426.1248ms
+2024-08-04 12:56:06.146 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.3983ms
+2024-08-04 12:56:06.240 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 12:56:06.559 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 318.3779ms
+2024-08-04 12:56:30.776 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Author?name=sree&biography=ghgkyuhbopyu%20dtyfvcesrhkjkhjjhkiuoikjljkhuhiouiou - multipart/form-data; boundary=----WebKitFormBoundarylfmCdmm7Rkg44MYZ 12423
+2024-08-04 12:56:30.787 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:56:30.856 +05:30  INF  Route matched with {action = "CreateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAuthor(BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:56:34.951 +05:30  INF  Executed DbCommand (233ms) [Parameters=[@__author_name_0='?' (Size = 50) (DbType = AnsiString), @__author_biography_1='?' (Size = 200) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[name] = @__author_name_0 AND [a].[biography] = @__author_biography_1
+2024-08-04 12:56:35.567 +05:30  INF  Executed DbCommand (103ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = -1) (DbType = Binary), @p3='?' (Size = 200) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([CreatedAt], [UpdatedAt], [author_image], [biography], [name])
+OUTPUT INSERTED.[author_id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-04 12:56:35.646 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 12:56:35.656 +05:30  INF  Executed action BookStore.Controllers.AuthorController.CreateAuthor (BookStore) in 4792.7341ms
+2024-08-04 12:56:35.657 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.CreateAuthor (BookStore)'
+2024-08-04 12:56:35.672 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Author?name=sree&biography=ghgkyuhbopyu%20dtyfvcesrhkjkhjjhkiuoikjljkhuhiouiou - 200 null text/plain; charset=utf-8 4896.5152ms
+2024-08-04 12:58:27.350 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-04 12:58:27.367 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 12:58:27.376 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:58:27.443 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+2024-08-04 12:58:27.577 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Entities.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-04 12:58:27.617 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 241.4329ms
+2024-08-04 12:58:27.618 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 12:58:27.618 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 268.2735ms
+2024-08-04 12:59:18.777 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 12:59:18.779 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 12:59:18.789 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:59:18.909 +05:30  INF  Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 12:59:19.031 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 12:59:19.031 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 241.9889ms
+2024-08-04 12:59:19.032 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 12:59:19.032 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 256.3536ms
+2024-08-04 12:59:34.453 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/1 - null null
+2024-08-04 12:59:34.454 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 12:59:34.455 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 12:59:34.479 +05:30  INF  Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 12:59:34.481 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 12:59:34.493 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 37.6054ms
+2024-08-04 12:59:34.493 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 12:59:34.493 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/1 - 200 null application/json; charset=utf-8 40.007ms
+2024-08-04 13:09:33.041 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:09:33.553 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:09:33.599 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:09:33.602 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:09:33.603 +05:30  INF  Hosting environment: Development
+2024-08-04 13:09:33.603 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:09:37.650 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:09:39.243 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1603.5146ms
+2024-08-04 13:09:39.581 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:09:39.633 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:09:39.637 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 56.2057ms
+2024-08-04 13:09:39.892 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 258.9405ms
+2024-08-04 13:09:40.112 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:09:40.618 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 506.8507ms
+2024-08-04 13:09:58.285 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 13:09:58.301 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:09:58.354 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:10:02.647 +05:30  INF  Executed DbCommand (90ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:10:03.063 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 13:10:03.073 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 4711.6787ms
+2024-08-04 13:10:03.074 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:10:03.093 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 4808.7019ms
+2024-08-04 13:13:42.826 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:13:43.185 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:13:43.186 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:13:43.188 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:13:43.189 +05:30  INF  Hosting environment: Development
+2024-08-04 13:13:43.189 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:13:45.982 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:13:47.103 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1131.3701ms
+2024-08-04 13:13:47.297 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:13:47.325 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 28.254ms
+2024-08-04 13:13:47.327 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:13:47.596 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 268.9431ms
+2024-08-04 13:13:47.831 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:13:48.076 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 244.9874ms
+2024-08-04 13:14:02.698 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 13:14:02.712 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:02.777 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:14:05.995 +05:30  INF  Executed DbCommand (99ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:14:06.156 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:14:06.296 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 3511.8218ms
+2024-08-04 13:14:06.314 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:06.326 +05:30  ERR  An unhandled exception has occurred while executing the request.System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Http.FormFile.get_ContentType()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-04 13:14:06.372 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 500 null text/plain; charset=utf-8 3673.4664ms
+2024-08-04 13:14:31.393 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/1 - null null
+2024-08-04 13:14:31.394 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:31.395 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:14:31.498 +05:30  INF  Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:14:31.502 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:14:31.505 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 110.3448ms
+2024-08-04 13:14:31.506 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:31.506 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/1 - 200 null application/json; charset=utf-8 113.8258ms
+2024-08-04 13:14:36.795 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 13:14:36.796 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:36.796 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:14:37.039 +05:30  INF  Executed DbCommand (47ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:14:37.062 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:14:37.065 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 268.2585ms
+2024-08-04 13:14:37.065 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:14:37.066 +05:30  ERR  An unhandled exception has occurred while executing the request.System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Http.FormFile.get_ContentType()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-04 13:14:37.069 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 500 null text/plain; charset=utf-8 274.303ms
+2024-08-04 13:15:55.260 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:15:55.594 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:15:55.594 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:15:55.598 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:15:55.598 +05:30  INF  Hosting environment: Development
+2024-08-04 13:15:55.598 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:15:59.771 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:16:01.653 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1897.6251ms
+2024-08-04 13:16:02.663 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:16:02.664 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:16:02.766 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 102.9181ms
+2024-08-04 13:16:02.914 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 250.7507ms
+2024-08-04 13:16:03.222 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:16:03.585 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 362.8318ms
+2024-08-04 13:16:13.397 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 13:16:13.411 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:16:13.465 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:16:17.393 +05:30  INF  Executed DbCommand (147ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:16:17.602 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:16:17.767 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 4204.5615ms
+2024-08-04 13:16:17.779 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:16:17.790 +05:30  ERR  An unhandled exception has occurred while executing the request.System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.AspNetCore.Http.FormFile.get_ContentType()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-04 13:16:17.872 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 500 null text/plain; charset=utf-8 4474.4779ms
+2024-08-04 13:22:15.329 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:22:15.780 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:22:15.780 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:22:15.783 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:22:15.785 +05:30  INF  Hosting environment: Development
+2024-08-04 13:22:15.785 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:22:20.687 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:22:22.386 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1709.533ms
+2024-08-04 13:22:22.454 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:22:22.676 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 186.4901ms
+2024-08-04 13:22:22.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:22:22.799 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.0302ms
+2024-08-04 13:22:23.112 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:22:23.438 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.6609ms
+2024-08-04 13:22:34.868 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 13:22:34.880 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:22:34.920 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:22:38.454 +05:30  INF  Executed DbCommand (205ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:22:38.698 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:22:38.747 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 3816.0131ms
+2024-08-04 13:22:38.749 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:22:38.764 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 200 null application/json; charset=utf-8 3895.8806ms
+2024-08-04 13:26:18.609 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:26:19.106 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:26:19.106 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:26:19.109 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:26:19.109 +05:30  INF  Hosting environment: Development
+2024-08-04 13:26:19.109 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:26:23.551 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:26:24.708 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1163.5346ms
+2024-08-04 13:26:24.752 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:26:25.365 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 612.5908ms
+2024-08-04 13:26:25.366 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:26:25.728 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 362.0655ms
+2024-08-04 13:26:25.826 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:26:26.112 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 286.844ms
+2024-08-04 13:26:36.287 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/12 - null null
+2024-08-04 13:26:36.304 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:26:36.364 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:26:40.425 +05:30  INF  Executed DbCommand (145ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:26:40.752 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:26:40.823 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 4451.0343ms
+2024-08-04 13:26:40.824 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:26:40.838 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/12 - 200 null application/json; charset=utf-8 4551.1391ms
+2024-08-04 13:29:16.886 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:29:17.268 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:29:17.269 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:29:17.283 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:29:17.284 +05:30  INF  Hosting environment: Development
+2024-08-04 13:29:17.284 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:29:20.584 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:29:21.198 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 621.259ms
+2024-08-04 13:29:21.776 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:29:21.788 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:29:21.845 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 69.7342ms
+2024-08-04 13:29:22.236 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 447.1802ms
+2024-08-04 13:29:22.465 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:29:22.910 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 444.5462ms
+2024-08-04 13:29:34.818 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/1 - null null
+2024-08-04 13:29:34.828 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:29:34.876 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:29:39.116 +05:30  INF  Executed DbCommand (129ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:29:39.421 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:29:39.493 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 4590.57ms
+2024-08-04 13:29:39.494 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:29:39.508 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/1 - 200 null application/json; charset=utf-8 4691.2193ms
+2024-08-04 13:29:48.553 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/12 - null null
+2024-08-04 13:29:48.554 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:29:48.555 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:29:48.643 +05:30  INF  Executed DbCommand (35ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:29:48.679 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:29:48.699 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 144.0737ms
+2024-08-04 13:29:48.700 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:29:48.710 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/12 - 200 null application/json; charset=utf-8 157.299ms
+2024-08-04 13:55:53.507 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 13:55:54.424 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 13:55:54.425 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 13:55:54.428 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 13:55:54.429 +05:30  INF  Hosting environment: Development
+2024-08-04 13:55:54.429 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 13:55:57.862 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 13:55:58.959 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1063.585ms
+2024-08-04 13:55:59.433 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 13:55:59.472 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 13:55:59.477 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 44.6038ms
+2024-08-04 13:56:00.268 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 796.6608ms
+2024-08-04 13:56:00.626 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 13:56:00.877 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 251.5748ms
+2024-08-04 13:56:11.959 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/1 - null null
+2024-08-04 13:56:11.988 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:56:12.050 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:56:16.384 +05:30  INF  Executed DbCommand (417ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:56:16.680 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:56:16.771 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 4701.4786ms
+2024-08-04 13:56:16.773 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:56:16.786 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/1 - 200 null application/json; charset=utf-8 4829.2693ms
+2024-08-04 13:56:20.947 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/12 - null null
+2024-08-04 13:56:20.948 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:56:20.949 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 13:56:20.993 +05:30  INF  Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 13:56:21.024 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 13:56:21.046 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 97.0105ms
+2024-08-04 13:56:21.047 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 13:56:21.047 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/12 - 200 null application/json; charset=utf-8 100.2796ms
+2024-08-04 14:21:57.492 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 14:21:58.613 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 14:21:58.613 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 14:21:58.616 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 14:21:58.616 +05:30  INF  Hosting environment: Development
+2024-08-04 14:21:58.616 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 14:22:02.783 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 14:22:03.576 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 799.5004ms
+2024-08-04 14:22:03.972 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 14:22:04.291 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 14:22:04.509 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 536.9191ms
+2024-08-04 14:22:04.618 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 327.545ms
+2024-08-04 14:22:04.830 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 14:22:05.198 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 367.928ms
+2024-08-04 14:22:19.806 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-04 14:22:19.819 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:22:19.866 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 14:22:23.092 +05:30  INF  Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+2024-08-04 14:22:23.352 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 14:22:23.405 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 3532.408ms
+2024-08-04 14:22:23.406 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:22:23.419 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 3612.2774ms
+2024-08-04 14:42:45.265 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 14:42:45.830 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 14:42:45.830 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 14:42:45.834 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 14:42:45.836 +05:30  INF  Hosting environment: Development
+2024-08-04 14:42:45.836 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 14:42:49.792 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 14:42:51.336 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1551.4634ms
+2024-08-04 14:42:51.444 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 14:42:51.619 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 14:42:51.668 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 225.2314ms
+2024-08-04 14:42:52.082 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 463.6922ms
+2024-08-04 14:42:52.302 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 14:42:52.562 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.7162ms
+2024-08-04 14:43:06.682 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-04 14:43:06.745 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:43:06.790 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 14:43:10.479 +05:30  INF  Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+2024-08-04 14:43:11.002 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 14:43:11.010 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 4212.5831ms
+2024-08-04 14:43:11.010 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:43:11.035 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 400 null text/plain; charset=utf-8 4352.8628ms
+2024-08-04 14:43:38.505 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/1 - null null
+2024-08-04 14:43:38.507 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 14:43:38.534 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 14:43:38.845 +05:30  INF  Executed DbCommand (90ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 14:43:38.861 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 14:43:38.875 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 340.0122ms
+2024-08-04 14:43:38.875 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 14:43:38.876 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/1 - 200 null application/json; charset=utf-8 370.4582ms
+2024-08-04 14:43:57.078 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author/13 - null null
+2024-08-04 14:43:57.079 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 14:43:57.080 +05:30  INF  Route matched with {action = "getAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Author]] getAuthors(Int32) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 14:43:57.316 +05:30  INF  Executed DbCommand (97ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 14:43:57.318 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Author'.
+2024-08-04 14:43:57.325 +05:30  INF  Executed action BookStore.Controllers.AuthorController.getAuthors (BookStore) in 245.4045ms
+2024-08-04 14:43:57.326 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.getAuthors (BookStore)'
+2024-08-04 14:43:57.326 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author/13 - 200 null application/json; charset=utf-8 247.895ms
+2024-08-04 14:45:43.948 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 14:45:44.530 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 14:45:44.530 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 14:45:44.532 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 14:45:44.532 +05:30  INF  Hosting environment: Development
+2024-08-04 14:45:44.533 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 14:45:50.916 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 14:45:51.562 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 655.529ms
+2024-08-04 14:45:51.738 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 14:45:51.864 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 14:45:51.923 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 184.9126ms
+2024-08-04 14:45:52.002 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 138.0299ms
+2024-08-04 14:45:52.329 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 14:45:52.608 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 278.4287ms
+2024-08-04 14:46:12.055 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-04 14:46:12.066 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:46:12.147 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 14:46:16.093 +05:30  INF  Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+2024-08-04 14:46:16.428 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-04 14:46:16.594 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 4435.4505ms
+2024-08-04 14:46:16.595 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-04 14:46:16.624 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 4568.9687ms
+2024-08-04 15:19:11.337 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:19:11.653 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:19:11.653 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:19:11.656 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:19:11.656 +05:30  INF  Hosting environment: Development
+2024-08-04 15:19:11.657 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:19:15.128 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:19:15.582 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 488.7237ms
+2024-08-04 15:19:17.888 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:19:17.922 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:19:17.952 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 64.6272ms
+2024-08-04 15:19:18.181 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 258.7033ms
+2024-08-04 15:19:18.534 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:19:18.737 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.1173ms
+2024-08-04 15:21:20.952 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 184
+2024-08-04 15:21:20.965 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:21:21.007 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:21:24.763 +05:30  INF  Executed DbCommand (131ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:21:25.059 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:21:25.070 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 4054.1616ms
+2024-08-04 15:21:25.071 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:21:25.083 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 4131.17ms
+2024-08-04 15:26:40.348 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:26:40.651 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:26:40.651 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:26:40.653 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:26:40.653 +05:30  INF  Hosting environment: Development
+2024-08-04 15:26:40.653 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:26:44.485 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:26:45.120 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 643.3164ms
+2024-08-04 15:26:45.261 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:26:45.398 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 136.6283ms
+2024-08-04 15:26:45.401 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:26:45.489 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.8925ms
+2024-08-04 15:26:45.739 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:26:45.980 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.3035ms
+2024-08-04 15:28:50.330 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 154
+2024-08-04 15:28:50.346 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:28:50.385 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:28:53.437 +05:30  INF  Executed DbCommand (162ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:28:53.688 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:28:53.696 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3304.9629ms
+2024-08-04 15:28:53.697 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:28:53.708 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 3377.9149ms
+2024-08-04 15:29:57.761 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:29:58.245 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:29:58.245 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:29:58.248 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:29:58.249 +05:30  INF  Hosting environment: Development
+2024-08-04 15:29:58.249 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:30:01.507 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:30:02.015 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 515.3431ms
+2024-08-04 15:30:06.027 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:30:06.027 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:30:06.050 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 23.1147ms
+2024-08-04 15:30:06.161 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.2604ms
+2024-08-04 15:30:06.453 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:30:06.700 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 247.2475ms
+2024-08-04 15:30:56.876 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 174
+2024-08-04 15:30:56.903 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:30:56.972 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:31:00.274 +05:30  INF  Executed DbCommand (113ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:31:00.688 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:31:00.697 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3718.4844ms
+2024-08-04 15:31:00.698 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:31:00.713 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 3837.6851ms
+2024-08-04 15:32:25.222 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:32:25.484 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:32:25.484 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:32:25.487 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:32:25.488 +05:30  INF  Hosting environment: Development
+2024-08-04 15:32:25.488 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:32:29.600 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:32:31.023 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1503.166ms
+2024-08-04 15:32:31.294 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:32:31.331 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:32:31.387 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 93.3806ms
+2024-08-04 15:32:31.679 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 348.2562ms
+2024-08-04 15:32:31.985 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:32:32.254 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 269.9596ms
+2024-08-04 15:33:45.978 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:33:46.348 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:33:46.349 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:33:46.351 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:33:46.355 +05:30  INF  Hosting environment: Development
+2024-08-04 15:33:46.355 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:33:49.973 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:33:50.753 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 788.6247ms
+2024-08-04 15:33:50.948 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:33:50.989 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:33:51.014 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 66.4938ms
+2024-08-04 15:33:51.135 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 145.3236ms
+2024-08-04 15:33:51.430 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:33:51.658 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 227.3245ms
+2024-08-04 15:34:25.889 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 195
+2024-08-04 15:34:25.899 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:34:25.949 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:34:26.453 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:34:26.485 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 530.3197ms
+2024-08-04 15:34:26.485 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:34:26.487 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null application/problem+json; charset=utf-8 599.0778ms
+2024-08-04 15:34:53.653 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 174
+2024-08-04 15:34:53.654 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:34:53.655 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:34:56.670 +05:30  INF  Executed DbCommand (165ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:34:56.930 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 15:34:56.931 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3276.2379ms
+2024-08-04 15:34:56.936 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:34:56.947 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 200 null text/plain; charset=utf-8 3293.675ms
+2024-08-04 15:35:15.824 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 175
+2024-08-04 15:35:15.825 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:35:15.826 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:35:15.879 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:35:15.895 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 15:35:15.896 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 69.951ms
+2024-08-04 15:35:15.896 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:35:15.896 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 200 null text/plain; charset=utf-8 74.112ms
+2024-08-04 15:36:53.431 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:36:53.853 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:36:53.854 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:36:53.859 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:36:53.859 +05:30  INF  Hosting environment: Development
+2024-08-04 15:36:53.860 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:36:58.554 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:36:59.452 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 906.5944ms
+2024-08-04 15:36:59.529 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:36:59.603 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 74.0544ms
+2024-08-04 15:36:59.604 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:36:59.888 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 283.8301ms
+2024-08-04 15:37:00.018 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:37:00.370 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 352.7709ms
+2024-08-04 15:37:15.908 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 174
+2024-08-04 15:37:15.920 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:37:15.952 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:37:20.576 +05:30  INF  Executed DbCommand (216ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:37:21.127 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:37:21.142 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 5177.9486ms
+2024-08-04 15:37:21.143 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:37:21.156 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 5248.357ms
+2024-08-04 15:39:28.736 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:39:29.167 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:39:29.167 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:39:29.171 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:39:29.172 +05:30  INF  Hosting environment: Development
+2024-08-04 15:39:29.172 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:39:32.150 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:39:32.906 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 762.8738ms
+2024-08-04 15:39:33.070 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:39:33.099 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 28.4711ms
+2024-08-04 15:39:33.100 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:39:33.227 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 127.2786ms
+2024-08-04 15:39:33.334 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:39:33.552 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.4782ms
+2024-08-04 15:40:43.720 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 178
+2024-08-04 15:40:43.752 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:40:43.830 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:40:47.965 +05:30  INF  Executed DbCommand (106ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:40:48.245 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:40:48.255 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 4416.2744ms
+2024-08-04 15:40:48.256 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:40:48.266 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 4545.8003ms
+2024-08-04 15:41:35.531 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/1 - application/json 187
+2024-08-04 15:41:35.535 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:41:35.536 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:41:35.595 +05:30  INF  Executed DbCommand (21ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:41:35.757 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:41:35.758 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 221.7559ms
+2024-08-04 15:41:35.758 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:41:35.758 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/1 - 400 null text/plain; charset=utf-8 227.7342ms
+2024-08-04 15:41:58.383 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/1 - application/json 210
+2024-08-04 15:41:58.384 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:41:58.384 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:41:58.412 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:41:58.457 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 72.4825ms
+2024-08-04 15:41:58.457 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:41:58.457 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/1 - 400 null application/problem+json; charset=utf-8 74.1672ms
+2024-08-04 15:42:30.710 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/1 - application/json 210
+2024-08-04 15:42:30.711 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:42:30.711 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:42:30.715 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:42:30.716 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 4.3689ms
+2024-08-04 15:42:30.716 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:42:30.716 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/1 - 400 null application/problem+json; charset=utf-8 6.1195ms
+2024-08-04 15:42:46.262 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/1 - application/json 211
+2024-08-04 15:42:46.262 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:42:46.263 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:42:46.462 +05:30  INF  Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:42:46.549 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:42:46.550 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 286.9013ms
+2024-08-04 15:42:46.550 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:42:46.550 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/1 - 400 null text/plain; charset=utf-8 288.4148ms
+2024-08-04 15:45:13.991 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:45:14.559 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:45:14.559 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:45:14.562 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:45:14.563 +05:30  INF  Hosting environment: Development
+2024-08-04 15:45:14.563 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:45:18.074 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:45:18.588 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 524.2584ms
+2024-08-04 15:45:19.621 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:45:19.663 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:45:19.974 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 353.0305ms
+2024-08-04 15:45:20.143 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 480.8881ms
+2024-08-04 15:45:20.393 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:45:20.759 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 365.1396ms
+2024-08-04 15:46:42.945 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 194
+2024-08-04 15:46:42.961 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:46:43.021 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:46:48.662 +05:30  INF  Executed DbCommand (142ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:46:49.122 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:46:49.135 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 6102.2585ms
+2024-08-04 15:46:49.135 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:46:49.160 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 6214.4759ms
+2024-08-04 15:47:40.353 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 24674
+2024-08-04 15:47:40.354 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:47:40.355 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:47:40.385 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:47:40.411 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 55.8551ms
+2024-08-04 15:47:40.411 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:47:40.411 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null application/problem+json; charset=utf-8 58.4997ms
+2024-08-04 15:50:05.435 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 1451
+2024-08-04 15:50:05.436 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:50:05.437 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:50:05.752 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:50:05.752 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 315.193ms
+2024-08-04 15:50:05.752 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:50:05.752 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null application/problem+json; charset=utf-8 317.5233ms
+2024-08-04 15:50:29.944 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 191
+2024-08-04 15:50:29.945 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:50:29.945 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:50:30.192 +05:30  INF  Executed DbCommand (93ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:50:30.295 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 15:50:30.296 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 350.409ms
+2024-08-04 15:50:30.296 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:50:30.297 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 352.4466ms
+2024-08-04 15:54:15.588 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 15:54:15.991 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 15:54:15.991 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 15:54:15.997 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 15:54:15.999 +05:30  INF  Hosting environment: Development
+2024-08-04 15:54:15.999 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 15:54:19.940 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 15:54:20.971 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1050.1071ms
+2024-08-04 15:54:21.041 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 15:54:21.215 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 192.2129ms
+2024-08-04 15:54:21.216 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 15:54:21.329 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.9776ms
+2024-08-04 15:54:21.557 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 15:54:21.865 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 307.8483ms
+2024-08-04 15:54:47.114 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 51
+2024-08-04 15:54:47.129 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:54:47.188 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:54:48.119 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-04 15:54:48.177 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 967.4659ms
+2024-08-04 15:54:48.177 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:54:48.180 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null application/problem+json; charset=utf-8 1065.814ms
+2024-08-04 15:54:59.303 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 50
+2024-08-04 15:54:59.304 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:54:59.304 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 15:55:02.361 +05:30  INF  Executed DbCommand (165ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 15:55:02.605 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 15:55:02.607 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3302.3964ms
+2024-08-04 15:55:02.608 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 15:55:02.619 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 200 null text/plain; charset=utf-8 3316.3585ms
+2024-08-04 16:03:03.542 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 16:03:03.909 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 16:03:03.909 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 16:03:03.912 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 16:03:03.913 +05:30  INF  Hosting environment: Development
+2024-08-04 16:03:03.913 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 16:03:07.643 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 16:03:08.740 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1105.5534ms
+2024-08-04 16:03:08.926 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 16:03:08.929 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 16:03:08.937 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.3449ms
+2024-08-04 16:03:09.034 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.8486ms
+2024-08-04 16:03:09.334 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 16:03:09.642 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 308.0042ms
+2024-08-04 16:03:29.144 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 90
+2024-08-04 16:03:29.163 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:03:29.229 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 16:03:32.244 +05:30  INF  Executed DbCommand (119ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 16:03:32.549 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 16:03:32.555 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3321.1223ms
+2024-08-04 16:03:32.556 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:03:32.568 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 3424.3392ms
+2024-08-04 16:05:05.005 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 16:05:05.483 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 16:05:05.483 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 16:05:05.486 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 16:05:05.488 +05:30  INF  Hosting environment: Development
+2024-08-04 16:05:05.488 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 16:05:09.013 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 16:05:10.677 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1672.5307ms
+2024-08-04 16:05:11.307 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 16:05:11.388 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 81.4037ms
+2024-08-04 16:05:11.389 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 16:05:12.062 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 673.3444ms
+2024-08-04 16:05:12.508 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 16:05:12.906 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 398.2411ms
+2024-08-04 16:05:25.302 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 90
+2024-08-04 16:05:25.314 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:05:25.379 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 16:05:29.101 +05:30  INF  Executed DbCommand (185ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 16:05:29.434 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 16:05:29.441 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 4056.5293ms
+2024-08-04 16:05:29.442 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:05:29.455 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 4152.6731ms
+2024-08-04 16:10:08.312 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 16:10:08.712 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 16:10:08.712 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 16:10:08.714 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 16:10:08.714 +05:30  INF  Hosting environment: Development
+2024-08-04 16:10:08.715 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 16:10:12.489 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 16:10:14.254 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1850.3351ms
+2024-08-04 16:10:14.808 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 16:10:15.263 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 454.2408ms
+2024-08-04 16:10:15.388 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 16:10:15.811 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 422.9719ms
+2024-08-04 16:10:16.025 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 16:10:16.272 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.0309ms
+2024-08-04 16:10:47.272 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 52
+2024-08-04 16:10:47.298 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:10:47.350 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateAuthor(Int32, BookStore.Models.Author) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 16:10:51.054 +05:30  INF  Executed DbCommand (89ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 16:10:51.343 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 16:10:51.360 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3996.4427ms
+2024-08-04 16:10:51.361 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:10:51.385 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 200 null text/plain; charset=utf-8 4112.5764ms
+2024-08-04 16:15:42.837 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 16:15:43.306 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 16:15:43.306 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 16:15:43.309 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 16:15:43.310 +05:30  INF  Hosting environment: Development
+2024-08-04 16:15:43.310 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 16:15:47.064 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 16:15:47.982 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 927.3125ms
+2024-08-04 16:15:48.005 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 16:15:48.153 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 16:15:48.157 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 151.7275ms
+2024-08-04 16:15:48.249 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.1756ms
+2024-08-04 16:15:48.475 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 16:15:48.775 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 300.032ms
+2024-08-04 16:16:02.395 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 90
+2024-08-04 16:16:02.437 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:16:02.486 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 16:16:06.382 +05:30  INF  Executed DbCommand (109ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 16:16:06.680 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-08-04 16:16:06.688 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 4195.2768ms
+2024-08-04 16:16:06.689 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:16:06.703 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 400 null text/plain; charset=utf-8 4307.5895ms
+2024-08-04 16:17:46.439 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-04 16:17:46.801 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-04 16:17:46.801 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-04 16:17:46.804 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-04 16:17:46.807 +05:30  INF  Hosting environment: Development
+2024-08-04 16:17:46.807 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-04 16:17:50.683 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-04 16:17:52.115 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1441.7667ms
+2024-08-04 16:17:52.901 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-04 16:17:53.035 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-04 16:17:53.163 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 261.3627ms
+2024-08-04 16:17:53.590 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 555.8343ms
+2024-08-04 16:17:53.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-04 16:17:54.121 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 279.8289ms
+2024-08-04 16:18:19.911 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7136/Author/13 - application/json 91
+2024-08-04 16:18:19.965 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:18:20.011 +05:30  INF  Route matched with {action = "UpdateAuthor", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UpdateAuthor(Int32, BookStore.Models.UpdateAuthor) on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-04 16:18:22.617 +05:30  INF  Executed DbCommand (114ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+WHERE [a].[author_id] = @__id_0
+2024-08-04 16:18:22.968 +05:30  INF  Executed DbCommand (23ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 200) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Authors] SET [UpdatedAt] = @p0, [author_image] = @p1, [biography] = @p2, [name] = @p3
+OUTPUT 1
+WHERE [author_id] = @p4;
+2024-08-04 16:18:23.047 +05:30  INF  Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-04 16:18:23.058 +05:30  INF  Executed action BookStore.Controllers.AuthorController.UpdateAuthor (BookStore) in 3040.4322ms
+2024-08-04 16:18:23.059 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.UpdateAuthor (BookStore)'
+2024-08-04 16:18:23.146 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7136/Author/13 - 200 null text/plain; charset=utf-8 3234.6112ms

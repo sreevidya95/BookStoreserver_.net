@@ -1,6 +1,10 @@
 ﻿ using AutoMapper;
+using BookStore.Models;
 using BookStore.Repository;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Collections;
 
 namespace BookStore.Controllers
 { 
@@ -31,15 +35,18 @@ namespace BookStore.Controllers
                     }
                     else
                     {
-                        return Ok(mapper.Map<IEnumerable<Entities.Author>>(authors));
+
+                    return Ok(mapper.Map<IEnumerable<Models.Author>>(authors));  
+                    
                     }
+                       
                 }
                 catch (Exception ex)
                 {
                     return BadRequest(ex.Message);
                 }
             }
-            [HttpGet("{id}")]
+            [HttpGet("{id}",Name ="getAuthor")]
             public async Task<ActionResult<Models.Author?>> getAuthors(int id)
             {
                 try
@@ -51,8 +58,8 @@ namespace BookStore.Controllers
                     }
                     else
                     {
-                        return Ok(mapper.Map<Models.Author>(author));
-                    }
+                         return Ok(mapper.Map<Models.Author>(author));
+                }
                 }
                 catch (Exception ex)
                 {
@@ -84,7 +91,65 @@ namespace BookStore.Controllers
                     return BadRequest(ex.Message);
                 }
             }
-           //Need to implement post and put
+            [HttpPost]
+            public async Task<ActionResult<Models.Author>>CreateAuthor(Models.Author author)
+            {
+                try
+                {
+                
+                    var authorEntity = mapper.Map<Entities.Author>(author);
+               
+                    await bookStore.CreateAuthor(authorEntity);
+                    bool added = await bookStore.SyncDb();
+                    if (added == true)
+                    {
+                   
+                       var authorModel = mapper.Map<Models.Author>(authorEntity);
+                    return CreatedAtRoute("getAuthor", new
+                    {
+                        id = authorModel.author_id
+                    }, authorModel);
+                   
+                    }
+                    else
+                    {
+                        return Ok("Author already Exists");
+                    }
+
+                }catch(Exception e)
+                {
+                    return BadRequest(e.Message);
+                }
+
+            }
+           [HttpPut("{id}")]
+           public async Task<ActionResult> UpdateAuthor(int id, UpdateAuthor author)
+           {
+                try
+                {
+                var authorCurrent = await bookStore.GetAuthorByIdAsync(id);
+                    if (authorCurrent == null)
+                    {
+                        return NotFound("Invalid Author");
+                    }
+                    else
+                    {
+                        mapper.Map(author,authorCurrent);
+                        bool updated = await bookStore.SyncDb();
+                        if (updated == true)
+                        {
+                            return Ok("Updated Successfully");
+                        }
+                        else
+                        {
+                        return Ok("seems like no changes are made to update");
+                        }
+                    }
+                }catch(Exception ex)
+                {
+                return BadRequest(ex.Message);
+                }
+           }
 
         }
 }
