@@ -1,4 +1,5 @@
 ﻿ using AutoMapper;
+using BookStore.Entities;
 using BookStore.Models;
 using BookStore.Repository;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -58,7 +59,12 @@ namespace BookStore.Controllers
                     }
                     else
                     {
-                         return Ok(mapper.Map<Models.Author>(author));
+                       var authorEntity = mapper.Map<Models.Author>(author);
+                            if (author.author_image != null)
+                            {
+                                authorEntity.author_image = bookStore.Image(Convert.ToBase64String(author.author_image));
+                            }
+                            return Ok(authorEntity);
                 }
                 }
                 catch (Exception ex)
@@ -92,14 +98,30 @@ namespace BookStore.Controllers
                 }
             }
             [HttpPost]
-            public async Task<ActionResult<Models.Author>>CreateAuthor(Models.Author author)
+            public async Task<ActionResult<Models.Author>>CreateAuthor(Models.UpdateAuthor author)
             {
                 try
                 {
-                
-                    var authorEntity = mapper.Map<Entities.Author>(author);
-               
-                    await bookStore.CreateAuthor(authorEntity);
+
+                var authorEntity = new Entities.Author
+                {
+                    name = author.name,
+                    biography = author.biography
+
+                };
+                if (author.author_image != null)
+                {
+                    var file = author.author_image;
+                    //read the file
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        file.CopyTo(memoryStream);
+                        var fileBytes = memoryStream.ToArray();
+                        authorEntity.author_image = fileBytes;
+                    }
+                }
+
+                await bookStore.CreateAuthor(authorEntity);
                     bool added = await bookStore.SyncDb();
                     if (added == true)
                     {

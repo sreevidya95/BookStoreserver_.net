@@ -33,8 +33,17 @@ namespace BookStore.Controllers
                 }
                 else
                 {
-                    
-                    return Ok(mapper.Map<IEnumerable<Models.Books>>(books));
+
+
+                    var bookEntity = mapper.Map<IEnumerable<Models.Books>>(books);
+                    for (int i = 0; i < bookEntity.Count(); i++)
+                    {
+                        if(bookEntity.ElementAt(i).book_image!=null)
+                        bookEntity.ElementAt(i).book_image = bookStore.Image(Convert.ToBase64String(bookEntity.ElementAt(i).book_image));
+
+
+                    }
+                    return Ok(bookEntity);
                 }
             }
             catch (Exception ex) { 
@@ -59,11 +68,45 @@ namespace BookStore.Controllers
                 else
                 {
 
-                    return Ok(mapper.Map<Models.Books>(book));
+                    var bookEntity = mapper.Map<Models.Books>(book);
+                    if (book.offerOfferId != null)
+                    {
+                        bookEntity.offerOfferId = book.offerOfferId;
+                    }
+                    if (book.book_image != null) {
+                        bookEntity.book_image = bookStore.Image(Convert.ToBase64String(book.book_image));
+                    }
+                    return bookEntity;
                 }
             } catch (Exception ex) { 
             
                   return BadRequest(ex.Message );
+            }
+        }
+        [HttpGet("sort/{sort}")]
+        public async Task<ActionResult<IEnumerable<Models.Books>>> GetBooksBySort(string sort)
+        {
+            try
+            {
+                var book = await bookStore.GetBooksBySortAsync(sort);
+                if (book == null)
+                {
+                    return NotFound(JsonConvert.SerializeObject(new
+                    {
+                        status = 404,
+                        msg = "Couldnt find the book"
+                    }));
+                }
+                else
+                {
+
+                    return Ok(mapper.Map<IEnumerable<Models.Books>>(book));
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
             }
         }
         //deleting single book
@@ -94,8 +137,27 @@ namespace BookStore.Controllers
         {
             try
             {
+                var bookEntity = new Entities.Books
+                {
+                    title=book.title,
+                    price = book.price,
+                    publication_date = book.publication_date,
+                    AuthorAuthorId = book.AuthorAuthorId,
+                    GenreGenreId = book.GenreGenreId,
+                    offerOfferId = book.offerOfferId
 
-                var bookEntity = mapper.Map<Entities.Books>(book);
+                };
+                if (book.book_image != null)
+                {
+                    var file = book.book_image;
+                    //read the file
+                    using (var memoryStream = new MemoryStream())
+                    {
+                       file.CopyTo(memoryStream);
+                       var fileBytes= memoryStream.ToArray();
+                        bookEntity.book_image = fileBytes;
+                    }
+                }
 
                 await bookStore.CreateBook(bookEntity);
                 bool added = await bookStore.SyncDb();
@@ -122,9 +184,8 @@ namespace BookStore.Controllers
             }
 
         }
-        //not working
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateBook(int id, UpdateBook book)
+        public async Task<ActionResult<Models.Books?>> UpdateBook(int id, UpdateBook book)
         {
             try
             {
@@ -135,17 +196,35 @@ namespace BookStore.Controllers
                 }
                 else
                 {
-                    mapper.Map(book,bookCurrent);
+                    if (book.book_image != null)
+                    {
+                        var file = book.book_image;
+                        //read the file
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            file.CopyTo(memoryStream);
+                            var fileBytes = memoryStream.ToArray();
+                            bookCurrent.book_image = fileBytes;
+                        }
+                    }
+                    bookCurrent.title = book.title;
+                    bookCurrent.price = book.price;
+                    bookCurrent.publication_date = book.publication_date;
+                    book.offerOfferId= book.offerOfferId;
+                    book.AuthorAuthorId = book.AuthorAuthorId;
+                    book.GenreGenreId = book.GenreGenreId;
                     bool updated = await bookStore.SyncDb();
+                    var model = mapper.Map<Models.Books>(bookCurrent);
                     if (updated == true)
                     {
+                       
                         log.LogInformation($"The Book with id '{bookCurrent.book_id}' is updated");
-                        return Ok("Book Updated Successfully");
+                       
+                       
+
                     }
-                    else
-                    {
-                        return Ok("seems like no changes are made to update");
-                    }
+                    return Ok(model);
+
                 }
             }
             catch (Exception ex)

@@ -76,6 +76,82 @@ namespace BookStore.Repository
                               offerOfferId = book.offerOfferId
                           }).FirstOrDefaultAsync();
         }
+        public async Task<IEnumerable<Entities.Books>> GetBooksBySortAsync(string sort)
+        {
+            if (sort == "ASC")
+            {
+                return await (from book in bookStoreDb.Books
+                              join auth in bookStoreDb.Authors
+                              on book.AuthorAuthorId equals auth.author_id
+                              join g in bookStoreDb.Genres
+                              on book.GenreGenreId equals g.genre_id
+                              orderby book.publication_date
+                              select new Entities.Books()
+                              {
+                                  book_id = book.book_id,
+                                  title = book.title,
+                                  price = book.price,
+                                  publication_date = book.publication_date,
+                                  AuthorAuthorId = book.AuthorAuthorId,
+                                  Author = auth,
+                                  GenreGenreId = book.GenreGenreId,
+                                  book_image = book.book_image,
+                                  Genre = g,
+                                  CreatedAt = book.CreatedAt,
+                                  UpdatedAt = book.UpdatedAt,
+                                  offerOfferId = book.offerOfferId
+                              }).ToListAsync();
+            }
+            else if (sort == "DESC")
+            {
+                return await (from book in bookStoreDb.Books
+                              join auth in bookStoreDb.Authors
+                              on book.AuthorAuthorId equals auth.author_id
+                              join g in bookStoreDb.Genres
+                              on book.GenreGenreId equals g.genre_id
+                              orderby book.publication_date descending
+                              select new Entities.Books()
+                              {
+                                  book_id = book.book_id,
+                                  title = book.title,
+                                  price = book.price,
+                                  publication_date = book.publication_date,
+                                  AuthorAuthorId = book.AuthorAuthorId,
+                                  Author = auth,
+                                  GenreGenreId = book.GenreGenreId,
+                                  book_image = book.book_image,
+                                  Genre = g,
+                                  CreatedAt = book.CreatedAt,
+                                  UpdatedAt = book.UpdatedAt,
+                                  offerOfferId = book.offerOfferId
+                              }).ToListAsync();
+            }
+            else
+            {
+                return await (from book in bookStoreDb.Books
+                              join auth in bookStoreDb.Authors
+                              on book.AuthorAuthorId equals auth.author_id
+                              join g in bookStoreDb.Genres
+                              on book.GenreGenreId equals g.genre_id
+                              orderby book.UpdatedAt descending
+                              where (book.offerOfferId != null)
+                              select new Entities.Books()
+                              {
+                                  book_id = book.book_id,
+                                  title = book.title,
+                                  price = book.price,
+                                  publication_date = book.publication_date,
+                                  AuthorAuthorId = book.AuthorAuthorId,
+                                  Author = auth,
+                                  GenreGenreId = book.GenreGenreId,
+                                  book_image = book.book_image,
+                                  Genre = g,
+                                  CreatedAt = book.CreatedAt,
+                                  UpdatedAt = book.UpdatedAt,
+                                  offerOfferId = book.offerOfferId
+                              }).ToListAsync();
+            }
+        }
         public async Task<Entities.Books?> GetOnlyBooksAsync(int id)
         {
             return await bookStoreDb.Books.Where(x => x.book_id == id).FirstOrDefaultAsync();
@@ -164,6 +240,10 @@ namespace BookStore.Repository
                 Console.WriteLine("Adding");
                 bookStoreDb.Books.Add(book);
             }
+        }
+        public byte[] Image(string image)
+        {
+            return Convert.FromBase64String(image);
         }
         /*public IFormFile GetFile(byte[] data)
         {

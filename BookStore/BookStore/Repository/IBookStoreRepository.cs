@@ -7,7 +7,8 @@ namespace BookStore.Repository
         //crud for books table
         public Task<IEnumerable<Books>> GetBooksasync();
         public Task<Books?> GetBooksByIdAsync(int id);
-       
+        public Task<IEnumerable<Entities.Books>> GetBooksBySortAsync(string sort);
+
         //update will get update when we sync the model and entity 
         public Task DeleteBooksAsync(int id);
         public Task<IEnumerable<Genre>> GetGenresAsync();
@@ -28,6 +29,7 @@ namespace BookStore.Repository
         public Task<Entities.Enquiry?> GetEnquiryById(int id);
         public Task<Entities.Books?> GetOnlyBooksAsync(int id);
         public Task DeleteEnquiry(int id);
+        public byte[] Image(string image);
         //public IFormFile GetFile(byte[] data);
 
     }
