@@ -27,6 +27,7 @@ export default function Books() {
     const [offcanvas, setOffcanvas] = useState(false);
     const [id, setId] = useState(0);
     useEffect(() => {
+        console.log(localStorage.getItem("authenication"));
         loadVal();
     }, [eff])
     function reducer(state, action) {
@@ -77,11 +78,12 @@ export default function Books() {
             localStorage.removeItem("id");
             localStorage.removeItem("name");
             localStorage.removeItem('email');
+            localStorage.removeItem("authenication");
             navigate("/");
         }
         else {
             setloading(true);
-            let msg = await delData(`http://localhost:3000/books/${id}`, "delete");
+            let msg = await delData(`https://localhost:7136/Books/${id}`, "delete");
             if (msg === 204) {
                 load();
                 setToast(false);
@@ -254,7 +256,7 @@ export default function Books() {
                             <ul className="col-12 mt-3" style={{marginLeft:"-50px"}}>
                                 <li className="fs-6 cur" onClick={() => sortPublicationDate('ASC')}>Sort By older</li>
                                 <li className="fs-6 cur" onClick={() => sortPublicationDate('DESC')}>Sort By New</li>
-                                <li className="fs-6 cur" onClick={() => sortPublicationDate('sale')}>Sort By Sale</li>
+                                
                             </ul>
                         </Nav.Link>
                         <hr />
@@ -296,7 +298,6 @@ export default function Books() {
                                             )
                                         }
                                         <Link to={`/book/${e.book_id}`}><h5 className="card-title col-12 link text-center">{e.title}</h5></Link>
-                                        {/* <p class="card-text"> Author:{e.author.name}</p> */}
                                         <p className="card-text col-12 text-center"> Author:{e.author.name}</p>
                                         <p className={`card-text col-12 text-center ${e.offerOfferId && offer && offer.length > 0 &&
                                             offer.map(p => p.offer_id === e.offerOfferId && new Date(p.startDate).setHours(0, 0, 0, 0) <= new Date().setHours(0, 0, 0, 0)

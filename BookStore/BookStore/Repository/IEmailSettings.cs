@@ -8,5 +8,6 @@ namespace BookStore.Repository
     string fromPassword {  get; set; }
        
         public void sendEmail(string toMail,string subject, string body);
+
     }
 }

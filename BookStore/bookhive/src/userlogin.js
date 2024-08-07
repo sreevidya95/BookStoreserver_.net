@@ -11,8 +11,8 @@ export default function UserLogin() {
     const submitEnquiry = async (event) => {
         event.preventDefault();
         setLoading(true);
-        const message = await postData("http://localhost:3000/enquiry/", "POST", enquiry);
-        if (message.hasOwnProperty('message')) {
+        const message = await postData("https://localhost:7136/Enquiry", "POST", enquiry);
+        if (message) {
             setToast(true);
             setLoading(false);
         }
@@ -24,9 +24,11 @@ export default function UserLogin() {
     return (
         <div className="container-fluid bg-img">
             {loading ?
-                <div className="spinner-grow" role="status">
+                <div className="row mt-5">
+                <div className="spinner-grow sp col-6 offset-6" role="status">
                     <span className="sr-only">Loading...</span>
                 </div>
+            </div>
                 :
                 <>
                     <div className="row">

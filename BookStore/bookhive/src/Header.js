@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Nav } from "react-bootstrap";
 import { Link, NavLink, useParams } from "react-router-dom";
-import { getData, delData, postData } from "./fetch";
+import { getData, delData, postData, postM } from "./fetch";
 import { Tooltip } from "react-tooltip";
 import Model from "./modal";
 import Offcanva from "./Offcanvas";
@@ -30,8 +30,8 @@ export default function Header(props) {
     }, []);
     async function getMessage() {
         setloading(true);
-        let message = await getData("http://localhost:3000/enquiry/", "get");
-        let generes = await getData("http://localhost:3000/generes/", "get");
+        let message = await getData("https://localhost:7136/Enquiry", "get");
+        let generes = await getData("https://localhost:7136/Genre", "get");
         setMessages(message);
         setGenere(generes)
         setloading(false);
@@ -39,8 +39,8 @@ export default function Header(props) {
     async function editMessage(method, id) {
         setloading(true);
         if (method === 'put') {
-            let m = await getData(`http://localhost:3000/enquiry/${id}`, method);
-            if (m.isRead === true) {
+            let m = await getData(`https://localhost:7136/Enquiry/${id}`, method);
+            if (m.isRead === 1) {
                 msg.current = "Updated Successfully";
             }
             else {
@@ -50,7 +50,7 @@ export default function Header(props) {
             setloading(false);
         }
         else {
-            let m = await delData(`http://localhost:3000/enquiry/${id}`, method);
+            let m = await delData(`https://localhost:7136/Enquiry/${id}`, method);
             if (m === 204) {
                 msg.current = "Deleted Succsessfully";
             }
@@ -74,10 +74,17 @@ export default function Header(props) {
         if (value.toDate().getTime() <= new Date().getTime()) {
             toast.error("Selected Date should be greater than current Date and Time ")
         } else {
-            let msg = await postData("http://localhost:3000/event/", "post", { email: localStorage.getItem('email'), event: data.eventName, date: value });
-            if (msg.hasOwnProperty('msg')) {
-                console.log(msg)
-                toast.success(msg.msg, {
+            var date1 = new Date(value);
+            //console.log(date1.toJSON());
+            let msg = await postM("https://localhost:7136/Sale", "post", { email: localStorage.getItem('email'), event_name: data.eventName, date:date1.toJSON()});
+            if (msg===200) {
+                
+                toast.success("Reminder Set", {
+                    onClose: () => setSchedule(false)
+                });
+            }
+            else{
+                toast.success("Couldnt set Reminder", {
                     onClose: () => setSchedule(false)
                 });
             }
@@ -109,7 +116,7 @@ export default function Header(props) {
                 </Nav.Link>
             </nav>
             <nav className='row background mt-3'>
-                <NavLink to="/books" className={`col-6 col-md-2 offset-md-1 text-center arsenal-sc-regular fs-3 text-decoration-none link mb-2 ${window.location.pathname === '/books' ? 'linkactive' : 'text-dark'}`}>Books</NavLink>
+                <NavLink to="/books" className={`col-6 col-md-2 offset-md-2 text-center arsenal-sc-regular fs-3 text-decoration-none link mb-2 ${window.location.pathname === '/books' ? 'linkactive' : 'text-dark'}`}>Books</NavLink>
                 <NavLink to="/authors" className={`col-6 col-md-2 arsenal-sc-regular fs-3 text-decoration-none text-center link mb-2 ${window.location.pathname === '/authors' ? 'linkactive' : "text-dark"}`}>authors</NavLink>
                 <NavLink className="nav-link dropdown-toggle col-6 col-md-2 text-dark arsenal-sc-regular fs-3 text-decoration-none text-center mb-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i className="fa-regular fa-message"></i>
@@ -132,8 +139,7 @@ export default function Header(props) {
                         </div>
                     </div>
                 </NavLink>
-                <span className="nav-link col-6 col-md-2 fs-2 text-center mb-2 btn"><i className="fa fa-bullhorn link" onClick={() => setOffcanvas(true)}></i></span>
-                <Tooltip anchorSelect=".fa-bullhorn" place="bottom" className="fs-6"> Add New Offer</Tooltip>
+               
                 <div className="dropdown-menu col-12 col-md-6 col-xl-6 drop" aria-labelledby="navbarDropdown">
                     {loading ?
                         <div className="row">

@@ -73,6 +73,7 @@ export default function Model(props) {
         });
         let msg
         if (props.id > 0) {
+          console.log(data)
           msg = await postFormData(`https://localhost:7136/Author/${props.id}`, "put", data);
 
 
@@ -119,9 +120,9 @@ export default function Model(props) {
                 <Form.Control name="biography" as="textarea" placeholder="Enter Author's biography" className={`mt-3 ${error.biography ? "border border-danger" : 'border border-secondary'}`} onChange={handleData} value={author.biography} />
                 {error.biography && <h1 className="text-danger mt-1 h6">{error.biography}</h1>}
                 {props.id > 0 ?
-                  (author.author_image === null ? <h1 className="text-dark mt-2 h6">Image was not uploaded</h1> :
+                  (author.author_image === null || author.author_image == '' ? <h1 className="text-dark mt-2 h6">Image was not uploaded</h1> :
                     typeof author.author_image === 'object' ? ""
-                      : <img src={author.author_image} alt="no" height="100" width="100" className="mt-2" />) : ""
+                      : <img src={"data:image/jpeg;base64,"+author.author_image} alt="no" height="100" width="100" className="mt-2" />) : ""
                 }
                 {props.id > 0 &&
                   <Link to="#" type="btn"

@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookStore</name>
+    </assembly>
+    <members>
+        <member name="T:BookStore.Controllers.AdminController">
+            <summary>
+            Admin Controller
+            </summary>
+        </member>
+        <member name="M:BookStore.Controllers.AdminController.#ctor(BookStore.Repository.IBookStoreRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{BookStore.Controllers.AdminController},Microsoft.Extensions.Configuration.IConfiguration,BookStore.Repository.IEmailSettings)">
+            <summary>
+            Admin Contructor
+            </summary>
+            <param name="bookStore">Ibbokstore Repo</param>
+            <param name="mapper">Automapper</param>
+            <param name="log">serilog</param>
+            <param name="config">configuration</param>
+            <param name="mail">IEmailSettings</param>
+        </member>
+        <member name="M:BookStore.Controllers.AdminController.CreateNewAdmin(BookStore.Models.Admin)">
+            <summary>
+            Create New Admin
+            </summary>
+            <param name="admin"></param>
+            <returns>Newly created admin details</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AdminController.Login(BookStore.Models.Admin)">
+            <summary>
+            Authenticate admin
+            </summary>
+            <param name="admin">login credentials</param>
+            <returns>login details</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AdminController.forgotPassword(BookStore.Models.AdminEmail)">
+            <summary>
+            Send Forgot password link to the  Email
+            </summary>
+            <param name="ad">email id</param>
+            <returns>200 status</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AdminController.UpdatePassword(System.String,BookStore.Models.Admin)">
+            <summary>
+            To Update Password
+            </summary>
+            <param name="email">email id</param>
+            <param name="admin">New Password</param>
+            <returns>200 Status</returns>
+        </member>
+        <member name="T:BookStore.Controllers.AuthorController">
+            <summary>
+            Author Controller
+            </summary>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.#ctor(BookStore.Repository.IBookStoreRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{BookStore.Controllers.AuthorController})">
+            <summary>
+            Author Controller Constructor
+            </summary>
+            <param name="bookStore">dependency Injection of Ibook repo</param>
+            <param name="mapper"> for automapper</param>
+            <param name="logger"> for serilog</param>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.GetAuthors">
+            <summary>
+            Get all Authors From Database
+            </summary>
+            <returns> Returns all authors</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.getAuthors(System.Int32)">
+            <summary>
+            Specifi Author
+            </summary>
+            <param name="id">Author Id</param>
+            <returns>Return a specific book</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.DeleteAuthor(System.Int32)">
+            <summary>
+            Delete Particular Author
+            </summary>
+            <param name="id">Author id to delete</param>
+            <returns>204 status</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.CreateAuthor(BookStore.Models.UpdateAuthor)">
+            <summary>
+            Create Author
+            </summary>
+            <param name="author">author details</param>
+            <returns>newly created author details</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorController.UpdateAuthor(System.Int32,BookStore.Models.UpdateAuthor)">
+            <summary>
+            Update anAuthor
+            </summary>
+            <param name="id">Details to Update</param>
+            <param name="author">Return Updated Author</param>
+            <returns></returns>
+        </member>
+        <member name="T:BookStore.Controllers.BooksController">
+            <summary>
+            Controller for books
+            </summary>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.#ctor(BookStore.Repository.IBookStoreRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{BookStore.Controllers.BooksController})">
+            <summary>
+            Books Controller Constructor
+            </summary>
+            <param name="bookStore">IbbokstoreRepo</param>
+            <param name="mapper">automapper</param>
+            <param name="log">serilog</param>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.getBooksAsync">
+            <summary>
+            Get All the Books from Database
+            </summary>
+            <returns>Books</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.GetBooksById(System.Int32)">
+            <summary>
+            Get Specific book from BookStore Database
+            </summary>
+            <param name="id"> book id</param>
+            <returns>Specific Book</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.GetBookByAuthor(System.Int32)">
+            <summary>
+            Get The Books Belongs to Particular Author
+            </summary>
+            <param name="id"> Author Id(Foreignkey in book table)</param>
+            <returns>Books Related to Author</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.GetBooksBySort(System.String)">
+            <summary>
+            Sorting the books based on publication date Old or new
+            </summary>
+            <param name="sort"></param>
+            <returns>Sort Books in Asc/DESC</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            To Delete a Book
+            </summary>
+            <param name="id"> book id</param>
+            <returns>status code 204</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.CreateBook(BookStore.Models.UpdateBook)">
+            <summary>
+            To Create a New Book
+            </summary>
+            <param name="book">Details of the book</param>
+            <returns>Details of Book</returns>
+        </member>
+        <member name="M:BookStore.Controllers.BooksController.UpdateBook(System.Int32,BookStore.Models.UpdateBook)">
+            <summary>
+            Update The Specific Book
+            </summary>
+            <param name="id">Book id</param>
+            <param name="book"> Details to be updated</param>
+            <returns>Updated Book Details</returns>
+        </member>
+        <member name="T:BookStore.Controllers.Enquiry">
+            <summary>
+            Enquiry Controller
+            </summary>
+        </member>
+        <member name="M:BookStore.Controllers.Enquiry.#ctor(BookStore.Repository.IBookStoreRepository,AutoMapper.IMapper)">
+            <summary>
+            Enquiry Controller Constructor
+            </summary>
+            <param name="bookStore">Ibookstorerepo</param>
+            <param name="mapper">automapper</param>
+        </member>
+        <member name="M:BookStore.Controllers.Enquiry.CreateMessage(BookStore.Models.Entity)">
+            <summary>
+            To create new Enquiry
+            </summary>
+            <param name="enquiry"></param>
+            <returns>201 Status code</returns>
+        </member>
+        <member name="M:BookStore.Controllers.Enquiry.GetAll">
+            <summary>
+            Get All Enquiries
+            </summary>
+            <returns>all enquiries</returns>
+        </member>
+        <member name="M:BookStore.Controllers.Enquiry.DeleteEnquiry(System.Int32)">
+            <summary>
+            Delete an Enquiry
+            </summary>
+            <param name="id">enquiry id</param>
+            <returns>204 status code</returns>
+        </member>
+        <member name="M:BookStore.Controllers.Enquiry.UpdateEnquiry(System.Int32)">
+            <summary>
+            Update Enquiry as Read
+            </summary>
+            <param name="id">enquiry id</param>
+            <returns>enquiry details</returns>
+        </member>
+        <member name="T:BookStore.Controllers.GenreController">
+            <summary>
+            Genre Controller
+            </summary>
+        </member>
+        <member name="M:BookStore.Controllers.GenreController.#ctor(BookStore.Repository.IBookStoreRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{BookStore.Controllers.GenreController})">
+            <summary>
+            Genre Controller Constructor
+            </summary>
+            <param name="bookStore">dependency Injection for IbboRepo</param>
+            <param name="mapper"> for automapper</param>
+            <param name="logger">for serilog</param>
+        </member>
+        <member name="M:BookStore.Controllers.GenreController.GetGenres">
+            <summary>
+            Get All Genres for Database
+            </summary>
+            <returns>all Genres</returns>
+        </member>
+        <member name="M:BookStore.Controllers.GenreController.getGenreById(System.Int32)">
+            <summary>
+            Getting specific genre
+            </summary>
+            <param name="id">genre id</param>
+            <returns>specifi genre</returns>
+        </member>
+        <member name="M:BookStore.Controllers.GenreController.CreateGenre(BookStore.Models.Genre)">
+            <summary>
+            Create New Genre
+            </summary>
+            <param name="genre">Genre NAme</param>
+            <returns>newly create genre</returns>
+        </member>
+        <member name="T:BookStore.Migrations.bookstore">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.bookstore2">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.authordatatypechanged">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanged.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanged.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanged.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.authordatatypechanging">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanging.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanging.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.authordatatypechanging.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.bookstore3">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.bookstore4">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore4.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore4.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.bookstore5">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore5.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore5.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstore5.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.bookstorebook_imagetypechange">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstorebook_imagetypechange.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstorebook_imagetypechange.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.bookstorebook_imagetypechange.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Migrations.addingbookimage_as_varbinary">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.addingbookimage_as_varbinary.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.addingbookimage_as_varbinary.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookStore.Migrations.addingbookimage_as_varbinary.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookStore.Models.Admin">
+            <summary>
+            Admin Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Admin.admin_id">
+            <summary>
+            Admin Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Admin.name">
+            <summary>
+            Admin's Name
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Admin.email">
+            <summary>
+            Admin's Email
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Admin.password">
+            <summary>
+            Admin's Password
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Admin.authenticationToken">
+            <summary>
+            Authenication Token
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.AdminEmail">
+            <summary>
+            Admin Email
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.AdminEmail.Email">
+            <summary>
+            Admin's Email
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.Author">
+            <summary>
+            Author's Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.author_id">
+            <summary>
+            Author Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.name">
+            <summary>
+            Name of author
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.biography">
+            <summary>
+            author's biography
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.author_image">
+            <summary>
+            Image of Author
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.CreatedAt">
+            <summary>
+            created At
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Author.UpdatedAt">
+            <summary>
+            Updated At
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.Books">
+            <summary>
+            Book Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.book_id">
+            <summary>
+            Book Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.title">
+            <summary>
+            Book Title
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.price">
+            <summary>
+            Book Price
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.publication_date">
+            <summary>
+            Book's Publication Date
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.book_image">
+            <summary>
+            Book's Image
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.Author">
+            <summary>
+            Author Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.AuthorAuthorId">
+            <summary>
+            Author Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.Genre">
+            <summary>
+            Genre Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.GenreGenreId">
+            <summary>
+            Genre Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.offerOfferId">
+            <summary>
+            OfferId
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.CreatedAt">
+            <summary>
+            Created At
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Books.UpdatedAt">
+            <summary>
+            Updated At
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.Entity">
+            <summary>
+            Enquiry Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Entity.enq_id">
+            <summary>
+            Enquiry Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Entity.message">
+            <summary>
+            Message from User
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Entity.user_email">
+            <summary>
+            User's email
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Entity.isRead">
+            <summary>
+            Read by admin or not
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.Genre">
+            <summary>
+            Genre Details
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Genre.genre_id">
+            <summary>
+            Genre Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Genre.genre_name">
+            <summary>
+            Genre Name
+            </summary>
+        </member>
+        <member name="T:BookStore.Models.Reminder">
+            <summary>
+            To set Reminder
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Reminder.email">
+            <summary>
+            Email Id
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Reminder.event_name">
+            <summary>
+            Email Body
+            </summary>
+        </member>
+        <member name="P:BookStore.Models.Reminder.date">
+            <summary>
+            Date on which You want to set reminder for
+            </summary>
+        </member>
+        <member name="T:BookStore.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BookStore.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BookStore.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

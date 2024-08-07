@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.Http.Extensions;
 
 namespace BookStore.Controllers
 {
+    /// <summary>
+    /// Admin Controller
+    /// </summary>
     [Route("[Controller]")]
     [ApiController]
     public class AdminController : ControllerBase
@@ -21,7 +24,14 @@ namespace BookStore.Controllers
         private readonly ILogger<AdminController> log;
         private readonly IConfiguration config;
         private readonly IEmailSettings mail;
-
+        /// <summary>
+        /// Admin Contructor
+        /// </summary>
+        /// <param name="bookStore">Ibbokstore Repo</param>
+        /// <param name="mapper">Automapper</param>
+        /// <param name="log">serilog</param>
+        /// <param name="config">configuration</param>
+        /// <param name="mail">IEmailSettings</param>
         public AdminController(IBookStoreRepository bookStore, 
             IMapper mapper, ILogger<AdminController> log,IConfiguration config,
              IEmailSettings mail) {
@@ -31,8 +41,17 @@ namespace BookStore.Controllers
             this.config = config;
             this.mail = mail;
         }
+        /// <summary>
+        /// Create New Admin
+        /// </summary>
+        /// <param name="admin"></param>
+        /// <returns>Newly created admin details</returns>
         //TO create new Admin
         [HttpPost("new")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Models.Admin>> CreateNewAdmin(Models.Admin admin)
         {
             try
@@ -64,7 +83,16 @@ namespace BookStore.Controllers
 
          }
         //To Login 
+        /// <summary>
+        /// Authenticate admin
+        /// </summary>
+        /// <param name="admin">login credentials</param>
+        /// <returns>login details</returns>
         [HttpPost("/Login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Models.Admin>> Login(Models.Admin admin)
         {
             try
@@ -111,7 +139,16 @@ namespace BookStore.Controllers
                 return BadRequest(e.Message);
             }
         }
+        /// <summary>
+        /// Send Forgot password link to the  Email
+        /// </summary>
+        /// <param name="ad">email id</param>
+        /// <returns>200 status</returns>
         [HttpPost("fp")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> forgotPassword(Models.AdminEmail ad)
         {
             try
@@ -144,7 +181,17 @@ namespace BookStore.Controllers
             }
 
         }
+        /// <summary>
+        /// To Update Password
+        /// </summary>
+        /// <param name="email">email id</param>
+        /// <param name="admin">New Password</param>
+        /// <returns>200 Status</returns>
         [HttpPut("newPassword/{email}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> UpdatePassword(string email,Models.Admin admin)
         {
             try

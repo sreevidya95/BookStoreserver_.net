@@ -286,3 +286,10 @@ D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Deb
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Serilog.Sinks.File.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\obj\Debug\net8.0\BookStore.Properties.Resources.resources
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\obj\Debug\net8.0\BookStore.csproj.GenerateResource.cache
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\BookStore.xml
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.Core.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.NetCore.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.SqlServer.dll

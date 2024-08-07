@@ -30,7 +30,9 @@ namespace BookStore.Repository
         public Task<Entities.Books?> GetOnlyBooksAsync(int id);
         public Task DeleteEnquiry(int id);
         public byte[] Image(string image);
+        public Task<IEnumerable<Entities.Books?>> GetAuthorAuthorIdAsync(int id);
         //public IFormFile GetFile(byte[] data);
+        //public Task CreateOffer(Entities.Offer offer);
 
     }
 }

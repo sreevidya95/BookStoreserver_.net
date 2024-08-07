@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
 import { useParams } from "react-router-dom";
-import { postData } from "./fetch";
+import { postData, postM } from "./fetch";
 import Model from "./modal";
 export default function AdminLogin() {
   const navigate = useNavigate();
@@ -82,13 +82,19 @@ export default function AdminLogin() {
     }
     else {
       setLoading(true);
-      const message = await postData("https://localhost:7136/Admin/fp", "Post", { email: forgotEmail });
-      if (message.hasOwnProperty('msg')) {
+      const message = await postM("https://localhost:7136/Admin/fp", "Post", { email: forgotEmail });
+      if (message==200) {
         setLoading(false);
-        val.current = message.msg;
+        val.current = "message sent";
         setToast(false);
         setModal(true)
 
+      }
+      else{
+        setLoading(false);
+        val.current = "Greetings Never Sent";
+        setToast(false);
+        setModal(true)
       }
     }
     setErr(error);
@@ -106,13 +112,14 @@ export default function AdminLogin() {
     }
     else {
       error = {};
-      const message = await postData(`https://localhost:7136/Admin/newPassword/${cp.cp}`, "put", { password: pwd.newpassword });
-      if (message.hasOwnProperty('msg')) {
-        navigate("/adminLogin");
+      const message = await postM(`https://localhost:7136/Admin/newPassword/${cp.cp}`, "put", { password: pwd.newpassword });
+      if (message===200) {
+        
         setLoading(false);
-        val.current = message.msg;
         setToast(false);
-        setModal(true);
+        setModal(false);
+        navigate("/adminLogin");
+        
       }
       else {
         val.current = "Something went wrong";

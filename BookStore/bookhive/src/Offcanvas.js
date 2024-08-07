@@ -150,6 +150,7 @@ export default function Offcanva(props) {
       error.sd = "Start Should be less than End Date"
     }
     else {
+      console.log(offer);
       let msg = await postData("http://localhost:3000/offer", "post", offer);
       if (msg.hasOwnProperty('msg')) {
         toast.error(msg.msg,

@@ -160,8 +160,6 @@ namespace BookStore.Repository
         {
             return await bookStoreDb.SaveChangesAsync() > 0;
         }
-
-       
         public async Task CreateGenre(Entities.Genre genre)
         {
            var exists = await bookStoreDb.Genres.
@@ -197,14 +195,22 @@ namespace BookStore.Repository
             var author = await GetAuthorByIdAsync(id);
             if (author != null)
             {
-                var books = await bookStoreDb.Books.Where(x => x.AuthorAuthorId == id).FirstOrDefaultAsync();
-                if (books == null)
+                var books = await GetAuthorAuthorIdAsync(id);
+                if (books == null || books.Count()<=0)
                 {
                     bookStoreDb.Remove(author);
                 }
             }
         }
-        
+        public async Task<IEnumerable<Entities.Books?>> GetAuthorAuthorIdAsync(int id)
+        {
+            return await bookStoreDb.Books.Where(x => x.AuthorAuthorId == id).ToListAsync();
+        }
+        public async Task<Entities.Enquiry?> GetEnquiryById(int id)
+        {
+            return await bookStoreDb.Enquiries.Where(x => x.enq_id == id).FirstOrDefaultAsync();
+        }
+
         public async Task CreateAdminAsync(Entities.Admin admin)
         {
             var adminConfirmation = await LoginAdmin(admin.email);
@@ -283,10 +289,7 @@ namespace BookStore.Repository
                 bookStoreDb.Remove(enquiry);
             }
         }
-        public async Task<Entities.Enquiry?> GetEnquiryById(int id)
-        {
-            return await bookStoreDb.Enquiries.Where(x => x.enq_id == id).FirstOrDefaultAsync();
-        }
+       
     }
             
 }

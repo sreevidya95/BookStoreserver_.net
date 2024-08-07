@@ -21,10 +21,10 @@ export default function AuthorDetails() {
     }, [id]);
     async function loadAuthor(i) {
         setloading(true)
-        const author = await getData(`http://localhost:3000/authors/${i}`, "get");
+        const author = await getData(`https://localhost:7136/Author/${i}`, "get");
         if (author) {
             setData(author);
-            const bookdata = await getData(`http://localhost:3000/books/author/${i}`, "get");
+            const bookdata = await getData(`https://localhost:7136/Books/Author/${i}`, "get");
             setBooks(bookdata);
         }
         else {
@@ -52,7 +52,7 @@ export default function AuthorDetails() {
                     </div>
                     <div className="row">
                         <div className="col-md-4 col-xl-4 col-12 mt-5">
-                            {data && (data.author_image ? <img src={data.author_image} alt="no" height="300" width="300" className="ms-5 auth_img fr name" /> : <img src="/user.jpg" alt="no" height="300" width="300" className="ms-5 auth_img fr name" />)}
+                            {data && (data.author_image ? <img src={"data:image/jpeg;base64," +data.author_image} alt="no" height="300" width="300" className="ms-5 auth_img fr name" /> : <img src="/user.jpg" alt="no" height="300" width="300" className="ms-5 auth_img fr name" />)}
                         </div>
                         <div className="col-md-6 col-xl-6 col-12 mt-5 offset-xl-1 offset-md-1 auth">
                             {data && <h3 className="display-4 col-12 text-dark arsenal-sc-regular">{data.name}</h3>}
@@ -66,9 +66,11 @@ export default function AuthorDetails() {
                     <div className="row">
                         <p className="col-12 h1 arsenal-sc-regular ms-5">Books</p>
                         <div className="row">
+                            
                             {books && (books.length > 0 ? books.map(e =>
                                 <>
-                                    {e.book_image ? <img src={e.book_image} alt="none" height="400" className={`${!isMobile && 'ms-5'} mt-5 mb-5 col-md-3 col-xl-3 col-12 book`} /> :
+                                      {console.log(books)}
+                                    {e.book_image ? <img src={"data:image/jpeg;base64,"+e.book_image} alt="none" height="400" className={`${!isMobile && 'ms-5'} mt-5 mb-5 col-md-3 col-xl-3 col-12 book`} /> :
                                         <span className={`${!isMobile ? 'ms-5' : 'ms-3'} mt-5 mb-5 col-md-3 col-xl-3 col-12 h1 fw-bold title book`}>{e.title}</span>}
                                 </>
                             ) : <h1 className="h3 text-dark text-center mb-5">No Books found for this Author</h1>)}

@@ -1,27 +1,45 @@
 ﻿using AutoMapper;
 using BookStore.Models;
 using BookStore.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage.Json;
 using Newtonsoft.Json;
 
 namespace BookStore.Controllers
 {
+    /// <summary>
+    /// Controller for books
+    /// </summary>
     [Route("[Controller]")]
     [ApiController]
+    //[Authorize]
     public class BooksController : ControllerBase
     {
         private readonly IBookStoreRepository bookStore;
         private readonly IMapper mapper;
         private readonly ILogger<BooksController> log;
-
+        /// <summary>
+        /// Books Controller Constructor
+        /// </summary>
+        /// <param name="bookStore">IbbokstoreRepo</param>
+        /// <param name="mapper">automapper</param>
+        /// <param name="log">serilog</param>
         public BooksController(IBookStoreRepository bookStore,IMapper mapper,ILogger<BooksController> log) {
             this.bookStore = bookStore;
             this.mapper = mapper;
             this.log = log;
         }
+        /// <summary>
+        /// Get All the Books from Database
+        /// </summary>
+        /// <returns>Books</returns>
         //getting all books
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<IEnumerable<Models.Books?>>> getBooksAsync()
         {
             try
@@ -50,8 +68,17 @@ namespace BookStore.Controllers
                  return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// Get Specific book from BookStore Database
+        /// </summary>
+        /// <param name="id"> book id</param>
+        /// <returns>Specific Book</returns>
         //getting specific book
         [HttpGet("{id}",Name ="getBook")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Models.Books?>> GetBooksById(int id)
         {
             try
@@ -83,7 +110,53 @@ namespace BookStore.Controllers
                   return BadRequest(ex.Message );
             }
         }
+        /// <summary>
+        /// Get The Books Belongs to Particular Author
+        /// </summary>
+        /// <param name="id"> Author Id(Foreignkey in book table)</param>
+        /// <returns>Books Related to Author</returns>
+        [HttpGet("Author/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<IEnumerable<Models.Books>>> GetBookByAuthor(int id)
+        {
+            try
+            {
+                var bookEntity = await bookStore.GetAuthorAuthorIdAsync(id);
+                if (bookEntity == null)
+                {
+                    return NotFound("Couldnt find the book of the author");
+
+                }
+                else
+                {
+                    var model = mapper.Map<IEnumerable<Models.Books>>(bookEntity);
+                    for (int i = 0; i < model.Count(); i++)
+                    {
+                        if (model.ElementAt(i).book_image != null)
+                            model.ElementAt(i).book_image = bookStore.Image(Convert.ToBase64String(model.ElementAt(i).book_image));
+
+
+                    }
+                    return Ok(model);
+                }
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        /// <summary>
+        /// Sorting the books based on publication date Old or new
+        /// </summary>
+        /// <param name="sort"></param>
+        /// <returns>Sort Books in Asc/DESC</returns>
         [HttpGet("sort/{sort}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<IEnumerable<Models.Books>>> GetBooksBySort(string sort)
         {
             try
@@ -109,8 +182,17 @@ namespace BookStore.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// To Delete a Book
+        /// </summary>
+        /// <param name="id"> book id</param>
+        /// <returns>status code 204</returns>
         //deleting single book
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> DeleteBook(int id)
         {
             try
@@ -132,7 +214,16 @@ namespace BookStore.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        /// <summary>
+        /// To Create a New Book
+        /// </summary>
+        /// <param name="book">Details of the book</param>
+        /// <returns>Details of Book</returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Models.Books>> CreateBook(UpdateBook book)
         {
             try
@@ -184,9 +275,16 @@ namespace BookStore.Controllers
             }
 
         }
+        /// <summary>
+        /// Update The Specific Book
+        /// </summary>
+        /// <param name="id">Book id</param>
+        /// <param name="book"> Details to be updated</param>
+        /// <returns>Updated Book Details</returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Models.Books?>> UpdateBook(int id, UpdateBook book)
         {
+            Console.WriteLine(book);
             try
             {
                 var bookCurrent = await bookStore.GetOnlyBooksAsync(id);
@@ -210,9 +308,9 @@ namespace BookStore.Controllers
                     bookCurrent.title = book.title;
                     bookCurrent.price = book.price;
                     bookCurrent.publication_date = book.publication_date;
-                    book.offerOfferId= book.offerOfferId;
-                    book.AuthorAuthorId = book.AuthorAuthorId;
-                    book.GenreGenreId = book.GenreGenreId;
+                    bookCurrent.offerOfferId= book.offerOfferId;
+                    bookCurrent.AuthorAuthorId = book.AuthorAuthorId;
+                    bookCurrent.GenreGenreId = book.GenreGenreId;
                     bool updated = await bookStore.SyncDb();
                     var model = mapper.Map<Models.Books>(bookCurrent);
                     if (updated == true)

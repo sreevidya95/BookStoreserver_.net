@@ -2,21 +2,32 @@
 using BookStore.Entities;
 using BookStore.Models;
 using BookStore.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Collections;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookStore.Controllers
 { 
+    /// <summary>
+    /// Author Controller
+    /// </summary>
         [Route("[Controller]")]
         [ApiController]
+        //[Authorize]
         public class AuthorController : ControllerBase
     {
             private readonly IBookStoreRepository bookStore;
             private readonly IMapper mapper;
             private readonly ILogger<AuthorController> logger;
-
+        /// <summary>
+        /// Author Controller Constructor
+        /// </summary>
+        /// <param name="bookStore">dependency Injection of Ibook repo</param>
+        /// <param name="mapper"> for automapper</param>
+        /// <param name="logger"> for serilog</param>
             public AuthorController(IBookStoreRepository bookStore, IMapper mapper, ILogger<AuthorController> logger)
             {
                 this.bookStore = bookStore;
@@ -24,8 +35,16 @@ namespace BookStore.Controllers
                 this.logger = logger;
 
             }
-            [HttpGet]
-            public async Task<ActionResult<IEnumerable<Models.Author>>> GetAuthors()
+            /// <summary>
+            /// Get all Authors From Database
+            /// </summary>
+            /// <returns> Returns all authors</returns>
+                [HttpGet]
+            [ProducesResponseType(StatusCodes.Status200OK)]
+            [ProducesResponseType(StatusCodes.Status404NotFound)]
+            [ProducesResponseType(StatusCodes.Status502BadGateway)]
+            [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<IEnumerable<Models.Author>>> GetAuthors()
             {
                 try
                 {
@@ -37,8 +56,16 @@ namespace BookStore.Controllers
                     else
                     {
 
-                    return Ok(mapper.Map<IEnumerable<Models.Author>>(authors));  
-                    
+                        var authorEntity = mapper.Map<IEnumerable<Models.Author>>(authors);
+                        for (int i = 0; i < authorEntity.Count(); i++)
+                        {
+                            if (authorEntity.ElementAt(i).author_image != null)
+                                authorEntity.ElementAt(i).author_image = bookStore.Image(Convert.ToBase64String(authorEntity.ElementAt(i).author_image));
+
+
+                        }
+                            return Ok(authorEntity);
+
                     }
                        
                 }
@@ -47,8 +74,17 @@ namespace BookStore.Controllers
                     return BadRequest(ex.Message);
                 }
             }
+           /// <summary>
+           /// Specifi Author
+           /// </summary>
+           /// <param name="id">Author Id</param>
+           /// <returns>Return a specific book</returns>
             [HttpGet("{id}",Name ="getAuthor")]
-            public async Task<ActionResult<Models.Author?>> getAuthors(int id)
+            [ProducesResponseType(StatusCodes.Status200OK)]
+            [ProducesResponseType(StatusCodes.Status404NotFound)]
+            [ProducesResponseType(StatusCodes.Status502BadGateway)]
+            [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<Models.Author?>> getAuthors(int id)
             {
                 try
                 {
@@ -73,8 +109,17 @@ namespace BookStore.Controllers
                     return BadRequest(ex.Message);
                 }
             }
+        /// <summary>
+        /// Delete Particular Author
+        /// </summary>
+        /// <param name="id">Author id to delete</param>
+        /// <returns>204 status</returns>
             [HttpDelete("{id}")]
-            public async Task<IActionResult> DeleteAuthor(int id)
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status502BadGateway)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<IActionResult> DeleteAuthor(int id)
             {
                 try
                 {
@@ -97,8 +142,17 @@ namespace BookStore.Controllers
                     return BadRequest(ex.Message);
                 }
             }
+             /// <summary>
+             /// Create Author
+             /// </summary>
+             /// <param name="author">author details</param>
+             /// <returns>newly created author details</returns>
             [HttpPost]
-            public async Task<ActionResult<Models.Author>>CreateAuthor(Models.UpdateAuthor author)
+            [ProducesResponseType(StatusCodes.Status201Created)]
+            [ProducesResponseType(StatusCodes.Status404NotFound)]
+            [ProducesResponseType(StatusCodes.Status502BadGateway)]
+            [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<Models.Author>>CreateAuthor(Models.UpdateAuthor author)
             {
                 try
                 {
@@ -145,8 +199,18 @@ namespace BookStore.Controllers
                 }
 
             }
+          /// <summary>
+          /// Update anAuthor
+          /// </summary>
+          /// <param name="id">Details to Update</param>
+          /// <param name="author">Return Updated Author</param>
+          /// <returns></returns>
            [HttpPut("{id}")]
-           public async Task<ActionResult> UpdateAuthor(int id, UpdateAuthor author)
+            [ProducesResponseType(StatusCodes.Status200OK)]
+            [ProducesResponseType(StatusCodes.Status404NotFound)]
+            [ProducesResponseType(StatusCodes.Status502BadGateway)]
+            [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<Models.Author?>> UpdateAuthor(int id, UpdateAuthor author)
            {
                 try
                 {
@@ -157,18 +221,30 @@ namespace BookStore.Controllers
                     }
                     else
                     {
-                        mapper.Map(author,authorCurrent);
-                        bool updated = await bookStore.SyncDb();
-                        if (updated == true)
+                    if (author.author_image != null)
+                    {
+                        var file = author.author_image;
+                        //read the file
+                        using (var memoryStream = new MemoryStream())
                         {
-                                logger.LogInformation($"The Author with id '{authorCurrent.author_id}' is updated");
-                                return Ok("Updated Successfully");
-                        }
-                        else
-                        {
-                            return Ok("seems like no changes are made to update");
+                            file.CopyTo(memoryStream);
+                            var fileBytes = memoryStream.ToArray();
+                            authorCurrent.author_image = fileBytes;
                         }
                     }
+                    authorCurrent.name = author.name;
+                    authorCurrent.biography = author.biography;
+                    authorCurrent.UpdatedAt = author.UpdatedAt;
+
+                    bool updated = await bookStore.SyncDb();
+                    var model = mapper.Map<Models.Author>(authorCurrent);
+                    if (updated == true)
+                        {
+                           logger.LogInformation($"The Author with id '{authorCurrent.author_id}' is updated");
+                               
+                        }
+                    return Ok(model);
+                }
                 }catch(Exception ex)
                 {
                 return BadRequest(ex.Message);

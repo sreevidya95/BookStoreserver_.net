@@ -63,12 +63,12 @@ export default function Authors() {
         setloading(true);
         if (method === 'delete') {
             setToast(false);
-            let m = await delData(`http://localhost:3000/authors/${id}`, method);
+            let m = await delData(`https://localhost:7136/Author/${id}`, method);
             if (m === 204) {
                 
                 setId(0); 
                 toast.success("Deleted Successfully",{
-                    onClose:()=>{ load();}
+                    onClose:()=>{setId(0); load();}
                 });
             }
             else {
@@ -83,7 +83,8 @@ export default function Authors() {
             localStorage.removeItem("id");
             localStorage.removeItem("name");
             localStorage.removeItem('email');
-            naviage("/")
+            localStorage.removeItem("authenication");
+            naviage("/");
 
         }
          
@@ -97,7 +98,7 @@ export default function Authors() {
     }
     async function loadAuthor() {
         setloading(true)
-        let author = await getData("http://localhost:3000/authors/", "get");
+        let author = await getData("https://localhost:7136/Author", "get");
         setAuthors(author);
         setloading(false);
     }
@@ -120,7 +121,7 @@ export default function Authors() {
                     {(authors.length > 0) ?
                         authors.map((e) =>
                             <div className="card col-12 col-md-3 col-xl-3 author mt-5 border border-white rounded-5" key={e.author_id}>
-                                {e.author_image ? <img src={e.author_image} alt="no" className="card-img" height="400" width="200" />
+                                {e.author_image ? <img src={"data:image/jpeg;base64,"+e.author_image} alt="no" className="card-img" height="400" width="200" />
                                     : <img src="/user.jpg" alt='no' className="card-img" height="400" width='200' />}
                                 <div className="card-body text-white  text-center n">
                                     <div className="op rounded-5 cur">
