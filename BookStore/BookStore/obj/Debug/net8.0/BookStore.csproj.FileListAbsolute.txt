@@ -293,3 +293,9 @@ D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Deb
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.Core.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.NetCore.dll
 D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Hangfire.SqlServer.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Castle.Core.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\FluentAssertions.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\Moq.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

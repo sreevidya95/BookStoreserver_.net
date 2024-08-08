@@ -6161,3 +6161,1118 @@ FROM [Genres] AS [g]
 2024-08-07 17:25:50.642 +05:30  INF  Executed action BookStore.Controllers.SaleController.SetReminder (BookStore) in 197.0051ms
 2024-08-07 17:25:50.642 +05:30  INF  Executed endpoint 'BookStore.Controllers.SaleController.SetReminder (BookStore)'
 2024-08-07 17:25:50.642 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Sale - 200 null application/json; charset=utf-8 209.9886ms
+2024-08-07 17:32:12.968 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:32:14.328 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:32:14.546 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:32:14.754 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:32:14.754 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:32:14.765 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:32:14.765 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:32:14.765 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:32:14.851 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:32:14.878 +05:30  INF  Hosting environment: Development
+2024-08-07 17:32:14.925 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:32:15.016 +05:30  INF  Server wsamzn-gdq29na1:8448:b8ba9c1b successfully announced in 211.2431 ms
+2024-08-07 17:32:15.021 +05:30  INF  Server wsamzn-gdq29na1:8448:b8ba9c1b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:32:15.040 +05:30  INF  1 servers were removed due to timeout
+2024-08-07 17:32:15.142 +05:30  INF  Server wsamzn-gdq29na1:8448:b8ba9c1b all the dispatchers started
+2024-08-07 17:32:20.086 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:32:20.696 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 610.5996ms
+2024-08-07 17:32:20.760 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:32:20.763 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:32:20.765 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 5.5063ms
+2024-08-07 17:32:21.051 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 288.1305ms
+2024-08-07 17:32:21.574 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:32:21.958 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 383.5319ms
+2024-08-07 17:32:59.722 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:33:00.438 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:33:00.555 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:33:00.701 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:33:00.702 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:33:00.709 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:33:00.709 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:33:00.709 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:33:00.722 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:33:00.723 +05:30  INF  Hosting environment: Development
+2024-08-07 17:33:00.723 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:33:00.882 +05:30  INF  Server wsamzn-gdq29na1:3572:c5202bc5 successfully announced in 156.5855 ms
+2024-08-07 17:33:00.889 +05:30  INF  Server wsamzn-gdq29na1:3572:c5202bc5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:33:00.966 +05:30  INF  Server wsamzn-gdq29na1:3572:c5202bc5 all the dispatchers started
+2024-08-07 17:33:01.287 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:33:01.534 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 246.7178ms
+2024-08-07 17:33:01.567 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:33:01.569 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:33:01.575 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 8.2327ms
+2024-08-07 17:33:01.614 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.8907ms
+2024-08-07 17:33:01.719 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:33:01.942 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.467ms
+2024-08-07 17:33:21.467 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:33:21.479 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 12.2356ms
+2024-08-07 17:33:21.514 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:33:21.523 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:33:21.524 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 0.9785ms
+2024-08-07 17:33:21.529 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.5357ms
+2024-08-07 17:33:21.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:33:21.800 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.4248ms
+2024-08-07 17:34:01.917 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:34:02.995 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:34:03.223 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:34:03.526 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:34:03.526 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:34:03.536 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:34:03.537 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:34:03.537 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:34:03.577 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:34:03.578 +05:30  INF  Hosting environment: Development
+2024-08-07 17:34:03.578 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:34:04.129 +05:30  INF  Server wsamzn-gdq29na1:16252:27af9994 successfully announced in 565.1348 ms
+2024-08-07 17:34:04.136 +05:30  INF  Server wsamzn-gdq29na1:16252:27af9994 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:34:04.599 +05:30  INF  Server wsamzn-gdq29na1:16252:27af9994 all the dispatchers started
+2024-08-07 17:34:10.014 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:34:10.469 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 459.4585ms
+2024-08-07 17:34:13.778 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:34:13.787 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:34:13.793 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 15.3236ms
+2024-08-07 17:34:14.131 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 343.9546ms
+2024-08-07 17:34:14.265 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:34:14.635 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 369.7638ms
+2024-08-07 17:34:37.965 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:34:38.764 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:34:38.975 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:34:39.270 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:34:39.270 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:34:39.285 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:34:39.286 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:34:39.286 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:34:39.356 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:34:39.357 +05:30  INF  Hosting environment: Development
+2024-08-07 17:34:39.357 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:34:39.632 +05:30  INF  Server wsamzn-gdq29na1:13560:f8b55f18 successfully announced in 288.8543 ms
+2024-08-07 17:34:39.638 +05:30  INF  Server wsamzn-gdq29na1:13560:f8b55f18 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:34:40.389 +05:30  INF  Server wsamzn-gdq29na1:13560:f8b55f18 all the dispatchers started
+2024-08-07 17:34:42.169 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:34:42.650 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 482.132ms
+2024-08-07 17:34:42.694 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:34:42.721 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:34:42.760 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 65.9897ms
+2024-08-07 17:34:43.076 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 355.2858ms
+2024-08-07 17:34:43.175 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:34:43.538 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 362.79ms
+2024-08-07 17:36:22.449 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Enquiry - null null
+2024-08-07 17:36:22.457 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Books - null null
+2024-08-07 17:36:22.654 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:22.656 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Books - 204 null null 199.6947ms
+2024-08-07 17:36:22.656 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Author - null null
+2024-08-07 17:36:22.658 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:22.660 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Author - 204 null null 1.7792ms
+2024-08-07 17:36:22.671 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:22.671 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Enquiry - 204 null null 222.3973ms
+2024-08-07 17:36:22.696 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 17:36:22.696 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-07 17:36:22.831 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:36:22.831 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:36:22.846 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+2024-08-07 17:36:22.846 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+2024-08-07 17:36:22.846 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:22.849 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 17:36:22.864 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 17:36:22.877 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 17:36:22.878 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 182.1392ms
+2024-08-07 17:36:22.897 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-07 17:36:22.948 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Enquiry - null null
+2024-08-07 17:36:22.954 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:36:22.957 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:22 PM'.
+2024-08-07 17:36:22.957 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:22.958 +05:30  INF  Executing endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 17:36:22.974 +05:30  INF  Route matched with {action = "GetAll", controller = "Enquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Entity]]] GetAll() on controller BookStore.Controllers.Enquiry (BookStore).
+2024-08-07 17:36:25.850 +05:30  INF  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+ORDER BY [a].[UpdatedAt] DESC
+2024-08-07 17:36:25.850 +05:30  INF  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[enq_id], [e].[isRead], [e].[message], [e].[user_email]
+FROM [Enquiries] AS [e]
+2024-08-07 17:36:26.019 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Entity, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:36:26.049 +05:30  INF  Executed action BookStore.Controllers.Enquiry.GetAll (BookStore) in 3066.9265ms
+2024-08-07 17:36:26.052 +05:30  INF  Executed endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 17:36:26.065 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Enquiry - 200 null application/json; charset=utf-8 3116.6466ms
+2024-08-07 17:36:26.078 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Genre - null null
+2024-08-07 17:36:26.078 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:26.078 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Genre - 204 null null 0.6611ms
+2024-08-07 17:36:26.084 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 17:36:26.085 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:26 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:36:26.085 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:26 PM'.
+2024-08-07 17:36:26.085 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:26.086 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:36:26.091 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 17:36:26.295 +05:30  INF  Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 17:36:26.331 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:36:26.334 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 242.2029ms
+2024-08-07 17:36:26.334 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:36:26.335 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 251.2339ms
+2024-08-07 17:36:26.946 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:36:27.128 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 4229.8287ms
+2024-08-07 17:36:27.128 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 17:36:27.129 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 4432.7992ms
+2024-08-07 17:36:27.159 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 17:36:27.160 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:27 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:36:27.161 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:06:27 PM'.
+2024-08-07 17:36:27.161 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:36:27.161 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:36:27.161 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 17:36:27.168 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 17:36:27.171 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:36:27.171 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 9.9138ms
+2024-08-07 17:36:27.172 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:36:27.172 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 13.3613ms
+2024-08-07 17:38:23.306 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:38:24.295 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:38:24.429 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:38:24.576 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:38:24.576 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:38:24.584 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:38:24.585 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:38:24.585 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:38:24.602 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:38:24.602 +05:30  INF  Hosting environment: Development
+2024-08-07 17:38:24.603 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:38:25.087 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:38:25.090 +05:30  INF  Server wsamzn-gdq29na1:8368:8ad900ec successfully announced in 485.2136 ms
+2024-08-07 17:38:25.110 +05:30  INF  Server wsamzn-gdq29na1:8368:8ad900ec is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:38:25.129 +05:30  INF  1 servers were removed due to timeout
+2024-08-07 17:38:25.229 +05:30  INF  Server wsamzn-gdq29na1:8368:8ad900ec all the dispatchers started
+2024-08-07 17:38:25.652 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 563.7159ms
+2024-08-07 17:38:25.724 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:38:25.734 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.4132ms
+2024-08-07 17:38:25.737 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:38:25.892 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.7939ms
+2024-08-07 17:38:26.054 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:38:26.558 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 503.9117ms
+2024-08-07 17:38:32.372 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Enquiry - null null
+2024-08-07 17:38:32.417 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Books - null null
+2024-08-07 17:38:32.429 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.429 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.430 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Books - 204 null null 13.6644ms
+2024-08-07 17:38:32.430 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Enquiry - 204 null null 58.5059ms
+2024-08-07 17:38:32.440 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 17:38:32.506 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Enquiry - null null
+2024-08-07 17:38:32.540 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Author - null null
+2024-08-07 17:38:32.541 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.542 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Author - 204 null null 2.0039ms
+2024-08-07 17:38:32.545 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:38:32.552 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:38:32.557 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+2024-08-07 17:38:32.557 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+2024-08-07 17:38:32.557 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.557 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.560 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:38:32.560 +05:30  INF  Executing endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 17:38:32.587 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-07 17:38:32.587 +05:30  INF  Route matched with {action = "GetAll", controller = "Enquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Entity]]] GetAll() on controller BookStore.Controllers.Enquiry (BookStore).
+2024-08-07 17:38:32.603 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-07 17:38:32.604 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:38:32.605 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:32 PM'.
+2024-08-07 17:38:32.605 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:32.605 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 17:38:32.615 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-07 17:38:34.223 +05:30  INF  Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+ORDER BY [a].[UpdatedAt] DESC
+2024-08-07 17:38:34.223 +05:30  INF  Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-07 17:38:34.223 +05:30  INF  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[enq_id], [e].[isRead], [e].[message], [e].[user_email]
+FROM [Enquiries] AS [e]
+2024-08-07 17:38:34.356 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Entity, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:38:34.377 +05:30  INF  Executed action BookStore.Controllers.Enquiry.GetAll (BookStore) in 1784.5833ms
+2024-08-07 17:38:34.378 +05:30  INF  Executed endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 17:38:34.389 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Enquiry - 200 null application/json; charset=utf-8 1882.8449ms
+2024-08-07 17:38:34.390 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Genre - null null
+2024-08-07 17:38:34.390 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:34.390 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Genre - 204 null null 0.6095ms
+2024-08-07 17:38:34.396 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 17:38:34.397 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:34 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:38:34.398 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:34 PM'.
+2024-08-07 17:38:34.398 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:34.398 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:38:34.408 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 17:38:34.532 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 17:38:34.552 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:38:34.554 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 145.335ms
+2024-08-07 17:38:34.554 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:38:34.555 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 159.9919ms
+2024-08-07 17:38:34.636 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:38:34.692 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:38:34.740 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 2152.9954ms
+2024-08-07 17:38:34.740 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:38:34.741 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 2300.1412ms
+2024-08-07 17:38:34.742 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 2126.3065ms
+2024-08-07 17:38:34.742 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 17:38:34.742 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 2139.0769ms
+2024-08-07 17:38:34.815 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 17:38:34.817 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:34 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:38:34.818 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 12:08:34 PM'.
+2024-08-07 17:38:34.818 +05:30  INF  CORS policy execution successful.
+2024-08-07 17:38:34.818 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:38:34.818 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 17:38:34.861 +05:30  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 17:38:34.863 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:38:34.863 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 42.1265ms
+2024-08-07 17:38:34.863 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 17:38:34.863 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 47.878ms
+2024-08-07 17:43:25.150 +05:30  INF  3 servers were removed due to timeout
+2024-08-07 17:44:27.336 +05:30  WRN  Failed to process the job '9': an exception occurred. Retry attempt 8 of 10 will be performed in 00:43:20.System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, ParseAddressInfo& parsedAddress, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+
+2024-08-07 17:44:53.180 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 17:44:53.181 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:14:53 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:44:53.181 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:14:53 PM'.
+2024-08-07 17:44:53.182 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:44:53.182 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-07 17:44:53.227 +05:30  INF  Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-07 17:44:53.409 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:44:53.544 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 361.4839ms
+2024-08-07 17:44:53.544 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:44:53.545 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 365.4231ms
+2024-08-07 17:45:57.999 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:46:00.229 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:46:00.405 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:46:00.620 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:46:00.620 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:46:00.631 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:46:00.631 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:46:00.631 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:46:00.694 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:46:00.695 +05:30  INF  Hosting environment: Development
+2024-08-07 17:46:00.695 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:46:00.905 +05:30  INF  Server wsamzn-gdq29na1:3728:cb63c058 successfully announced in 218.3603 ms
+2024-08-07 17:46:00.930 +05:30  INF  Server wsamzn-gdq29na1:3728:cb63c058 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:46:00.971 +05:30  INF  Server wsamzn-gdq29na1:3728:cb63c058 all the dispatchers started
+2024-08-07 17:46:01.364 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:46:01.804 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 439.6175ms
+2024-08-07 17:46:01.906 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:46:01.981 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:46:01.990 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 8.8016ms
+2024-08-07 17:46:02.005 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.0183ms
+2024-08-07 17:46:06.254 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:46:06.570 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 316.0772ms
+2024-08-07 17:46:21.042 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:46:21.054 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 11.8174ms
+2024-08-07 17:46:21.091 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:46:21.093 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:46:21.094 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 0.9482ms
+2024-08-07 17:46:21.112 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.9924ms
+2024-08-07 17:46:22.651 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:46:22.797 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.8573ms
+2024-08-07 17:46:46.285 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:46:50.574 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:46:51.094 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:46:52.040 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:46:52.040 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:46:52.058 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:46:52.058 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:46:52.059 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:46:52.156 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:46:52.157 +05:30  INF  Hosting environment: Development
+2024-08-07 17:46:52.158 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:46:52.882 +05:30  INF  Server wsamzn-gdq29na1:14780:e6ce7e9a successfully announced in 741.6699 ms
+2024-08-07 17:46:52.916 +05:30  INF  Server wsamzn-gdq29na1:14780:e6ce7e9a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:46:54.375 +05:30  INF  Server wsamzn-gdq29na1:14780:e6ce7e9a all the dispatchers started
+2024-08-07 17:47:14.131 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:47:14.897 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:47:15.046 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:47:15.486 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:47:15.486 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:47:15.496 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:47:15.497 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:47:15.497 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:47:15.541 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:47:15.544 +05:30  INF  Hosting environment: Development
+2024-08-07 17:47:15.544 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:47:15.706 +05:30  INF  Server wsamzn-gdq29na1:12648:a048f04d successfully announced in 167.9063 ms
+2024-08-07 17:47:15.722 +05:30  INF  Server wsamzn-gdq29na1:12648:a048f04d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:47:15.771 +05:30  INF  Server wsamzn-gdq29na1:12648:a048f04d all the dispatchers started
+2024-08-07 17:47:18.868 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:47:19.764 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 896.2194ms
+2024-08-07 17:47:19.888 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:47:19.889 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:47:19.897 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 9.0577ms
+2024-08-07 17:47:20.014 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.1023ms
+2024-08-07 17:47:20.410 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:47:20.854 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 444.4161ms
+2024-08-07 17:47:28.208 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 17:47:28.388 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:17:28 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:47:28.400 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:17:28 PM'.
+2024-08-07 17:47:28.408 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 17:47:28.417 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 17:47:28.420 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 212.201ms
+2024-08-07 17:48:04.338 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 17:48:05.230 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 17:48:05.373 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 17:48:05.522 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 17:48:05.522 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 17:48:05.531 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 17:48:05.531 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 17:48:05.531 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 17:48:05.552 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 17:48:05.553 +05:30  INF  Hosting environment: Development
+2024-08-07 17:48:05.553 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 17:48:05.775 +05:30  INF  Server wsamzn-gdq29na1:16992:a41b0480 successfully announced in 220.8606 ms
+2024-08-07 17:48:05.798 +05:30  INF  Server wsamzn-gdq29na1:16992:a41b0480 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 17:48:05.798 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:48:05.968 +05:30  INF  Server wsamzn-gdq29na1:16992:a41b0480 all the dispatchers started
+2024-08-07 17:48:06.190 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 391.7016ms
+2024-08-07 17:48:06.233 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:48:06.240 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 6.9541ms
+2024-08-07 17:48:06.249 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:48:06.296 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.111ms
+2024-08-07 17:48:06.447 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:48:06.724 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 277.0471ms
+2024-08-07 17:48:54.397 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:48:54.407 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 10.3566ms
+2024-08-07 17:48:54.448 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:48:54.451 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:48:54.452 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 0.9535ms
+2024-08-07 17:48:54.529 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.6291ms
+2024-08-07 17:48:55.754 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:48:55.892 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.9385ms
+2024-08-07 17:49:13.529 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 17:49:13.536 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 7.3439ms
+2024-08-07 17:49:14.766 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 17:49:14.767 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 0.8818ms
+2024-08-07 17:49:14.865 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 17:49:14.896 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.1289ms
+2024-08-07 17:49:15.096 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 17:49:15.262 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.7726ms
+2024-08-07 17:49:25.572 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 17:49:25.699 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:19:25 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 17:49:25.727 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 12:19:25 PM'.
+2024-08-07 17:49:25.731 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:49:25.759 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-07 17:49:28.919 +05:30  INF  Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-07 17:49:29.247 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 17:49:29.490 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 3725.9072ms
+2024-08-07 17:49:29.491 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 17:49:29.503 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 3930.4ms
+2024-08-07 17:53:05.899 +05:30  INF  4 servers were removed due to timeout
+2024-08-07 18:27:48.019 +05:30  WRN  Failed to process the job '9': an exception occurred. Retry attempt 9 of 10 will be performed in 01:11:04.System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, ParseAddressInfo& parsedAddress, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+
+2024-08-07 19:03:20.193 +05:30  ERR  Failed to process the job '2': an exception occurred.System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at InvokeStub_EmailSettings.sendEmail(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+2024-08-07 19:04:20.272 +05:30  ERR  Failed to process the job '1': an exception occurred.System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at InvokeStub_EmailSettings.sendEmail(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+2024-08-07 19:27:10.735 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 19:27:11.514 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 19:27:11.594 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 19:27:11.794 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 19:27:11.794 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 19:27:11.804 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 19:27:11.805 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 19:27:11.805 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 19:27:11.833 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 19:27:11.834 +05:30  INF  Hosting environment: Development
+2024-08-07 19:27:11.834 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 19:27:12.125 +05:30  INF  Server wsamzn-gdq29na1:9540:0c48e715 successfully announced in 289.1492 ms
+2024-08-07 19:27:12.134 +05:30  INF  Server wsamzn-gdq29na1:9540:0c48e715 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 19:27:12.155 +05:30  INF  Server wsamzn-gdq29na1:9540:0c48e715 all the dispatchers started
+2024-08-07 19:27:12.615 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:27:13.010 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 395.0191ms
+2024-08-07 19:27:13.029 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:27:13.049 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:27:13.070 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 41.0442ms
+2024-08-07 19:27:13.145 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.3847ms
+2024-08-07 19:27:13.288 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:27:13.621 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 333.5204ms
+2024-08-07 19:27:25.912 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 19:27:26.000 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 1:57:25 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 19:27:26.007 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 1:57:25 PM'.
+2024-08-07 19:27:26.013 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 19:27:26.019 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 19:27:26.020 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 107.8926ms
+2024-08-07 19:30:49.102 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:30:49.113 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 11.3347ms
+2024-08-07 19:30:49.158 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:30:49.159 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:30:49.160 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 1.2028ms
+2024-08-07 19:30:49.174 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.6301ms
+2024-08-07 19:30:49.287 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:30:49.380 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.9384ms
+2024-08-07 19:31:09.155 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:31:09.160 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 4.8709ms
+2024-08-07 19:31:09.216 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:31:09.219 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:31:09.220 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 1.5133ms
+2024-08-07 19:31:09.229 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.5533ms
+2024-08-07 19:31:09.532 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:31:09.622 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.251ms
+2024-08-07 19:31:37.515 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 19:31:39.341 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 19:31:39.440 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 19:31:39.919 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 19:31:39.919 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 19:31:39.929 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 19:31:39.930 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 19:31:39.930 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 19:31:39.972 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 19:31:39.972 +05:30  INF  Hosting environment: Development
+2024-08-07 19:31:39.973 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 19:31:40.249 +05:30  INF  Server wsamzn-gdq29na1:11360:b146336d successfully announced in 286.1699 ms
+2024-08-07 19:31:40.287 +05:30  INF  Server wsamzn-gdq29na1:11360:b146336d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 19:31:40.505 +05:30  INF  Server wsamzn-gdq29na1:11360:b146336d all the dispatchers started
+2024-08-07 19:31:44.582 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:31:45.250 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 672.5432ms
+2024-08-07 19:31:45.397 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:31:45.411 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:31:45.504 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 110.762ms
+2024-08-07 19:31:45.601 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 190.4316ms
+2024-08-07 19:31:45.813 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:31:46.320 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 506.8237ms
+2024-08-07 19:31:52.292 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 19:31:53.001 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:01:52 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 19:31:53.019 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:01:52 PM'.
+2024-08-07 19:31:53.030 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 19:31:53.041 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 19:31:53.044 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 752.4871ms
+2024-08-07 19:36:40.326 +05:30  INF  2 servers were removed due to timeout
+2024-08-07 19:36:55.723 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 19:36:56.278 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 19:36:56.397 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 19:36:56.509 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 19:36:56.509 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 19:36:56.516 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 19:36:56.517 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 19:36:56.517 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 19:36:56.529 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 19:36:56.530 +05:30  INF  Hosting environment: Development
+2024-08-07 19:36:56.530 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 19:36:56.673 +05:30  INF  Server wsamzn-gdq29na1:17056:44969144 successfully announced in 139.5515 ms
+2024-08-07 19:36:56.682 +05:30  INF  Server wsamzn-gdq29na1:17056:44969144 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 19:36:57.101 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:36:57.407 +05:30  INF  Server wsamzn-gdq29na1:17056:44969144 all the dispatchers started
+2024-08-07 19:36:57.683 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 582.3244ms
+2024-08-07 19:36:57.697 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:36:57.717 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 20.0768ms
+2024-08-07 19:36:57.718 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:36:57.836 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.9313ms
+2024-08-07 19:36:57.931 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:36:58.339 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 408.3312ms
+2024-08-07 19:37:34.496 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 74
+2024-08-07 19:37:34.598 +05:30  INF  CORS policy execution successful.
+2024-08-07 19:37:34.602 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 19:37:34.635 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-07 19:37:35.116 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-07 19:37:35.148 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 507.8841ms
+2024-08-07 19:37:35.148 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 19:37:35.151 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 400 null application/problem+json; charset=utf-8 655.1319ms
+2024-08-07 19:38:57.878 +05:30  WRN  Failed to process the job '9': an exception occurred. Retry attempt 10 of 10 will be performed in 01:53:56.System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, ParseAddressInfo& parsedAddress, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+
+2024-08-07 19:41:11.997 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 73
+2024-08-07 19:41:11.999 +05:30  INF  CORS policy execution successful.
+2024-08-07 19:41:12.000 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 19:41:12.000 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-07 19:41:13.616 +05:30  INF  Executed DbCommand (36ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[admin_id], [a].[email], [a].[name], [a].[password]
+FROM [Admins] AS [a]
+WHERE [a].[email] = @__email_0
+2024-08-07 19:41:14.533 +05:30  INF  Admin srividya.mom@gmail.com Logged in
+2024-08-07 19:41:14.535 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Admin'.
+2024-08-07 19:41:14.537 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 2536.9007ms
+2024-08-07 19:41:14.539 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 19:41:14.554 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 200 null application/json; charset=utf-8 2557.1887ms
+2024-08-07 19:41:56.734 +05:30  INF  1 servers were removed due to timeout
+2024-08-07 19:42:30.270 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 19:42:30.293 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 19:42:30.301 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 19:42:30.301 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 30.5746ms
+2024-08-07 19:44:01.716 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 19:44:01.773 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:14:01 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 19:44:01.775 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:14:01 PM'.
+2024-08-07 19:44:01.777 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 19:44:01.779 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 19:44:01.780 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 64.395ms
+2024-08-07 19:58:58.777 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 19:59:00.322 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 19:59:00.516 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 19:59:00.727 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 19:59:00.727 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 19:59:00.737 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 19:59:00.737 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 19:59:00.737 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 19:59:00.768 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 19:59:00.769 +05:30  INF  Hosting environment: Development
+2024-08-07 19:59:00.769 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 19:59:01.374 +05:30  INF  Server wsamzn-gdq29na1:11676:3babc9dc successfully announced in 596.5219 ms
+2024-08-07 19:59:01.423 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:59:01.458 +05:30  INF  Server wsamzn-gdq29na1:11676:3babc9dc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 19:59:02.843 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1419.0823ms
+2024-08-07 19:59:02.892 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:59:02.896 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:59:02.925 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 33.6118ms
+2024-08-07 19:59:03.049 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 152.7489ms
+2024-08-07 19:59:03.225 +05:30  INF  Server wsamzn-gdq29na1:11676:3babc9dc all the dispatchers started
+2024-08-07 19:59:21.775 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 19:59:23.102 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 19:59:23.293 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 19:59:24.487 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 19:59:24.487 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 19:59:24.497 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 19:59:24.497 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 19:59:24.497 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 19:59:24.525 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 19:59:24.526 +05:30  INF  Hosting environment: Development
+2024-08-07 19:59:24.526 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 19:59:24.647 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:59:25.246 +05:30  INF  Server wsamzn-gdq29na1:3068:efb4f269 successfully announced in 707.9428 ms
+2024-08-07 19:59:25.323 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 563.9186ms
+2024-08-07 19:59:25.335 +05:30  INF  Server wsamzn-gdq29na1:3068:efb4f269 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 19:59:25.408 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 19:59:25.442 +05:30  INF  Server wsamzn-gdq29na1:3068:efb4f269 all the dispatchers started
+2024-08-07 19:59:26.505 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1097.3924ms
+2024-08-07 19:59:26.577 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 19:59:26.587 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.2398ms
+2024-08-07 19:59:26.698 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 19:59:27.213 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 515.5664ms
+2024-08-07 19:59:27.466 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 19:59:27.685 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.4419ms
+2024-08-07 19:59:49.248 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 19:59:49.407 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:29:49 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 19:59:49.435 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 2:29:49 PM'.
+2024-08-07 19:59:49.442 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 19:59:49.447 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 19:59:49.453 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 205.4639ms
+2024-08-07 20:04:25.467 +05:30  INF  2 servers were removed due to timeout
+2024-08-07 20:06:34.860 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-07 20:06:36.055 +05:30  INF  Hangfire SQL objects installed.
+2024-08-07 20:06:36.224 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 20:06:36.406 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-07 20:06:36.407 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-07 20:06:36.417 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-07 20:06:36.418 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-07 20:06:36.418 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-07 20:06:36.532 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 20:06:36.533 +05:30  INF  Hosting environment: Development
+2024-08-07 20:06:36.534 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-07 20:06:36.747 +05:30  INF  Server wsamzn-gdq29na1:16184:96f41e03 successfully announced in 213.9798 ms
+2024-08-07 20:06:36.754 +05:30  INF  Server wsamzn-gdq29na1:16184:96f41e03 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-07 20:06:36.787 +05:30  INF  Server wsamzn-gdq29na1:16184:96f41e03 all the dispatchers started
+2024-08-07 20:06:37.126 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 20:06:37.664 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 537.6213ms
+2024-08-07 20:06:37.794 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 20:06:37.799 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 20:06:37.823 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 29.5665ms
+2024-08-07 20:06:37.901 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.1091ms
+2024-08-07 20:06:39.560 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 20:06:39.912 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 351.3558ms
+2024-08-07 20:07:52.045 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:07:52.101 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:07:52.104 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:07:52.105 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 59.3145ms
+2024-08-07 20:08:50.723 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 20:08:50.784 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 60.6264ms
+2024-08-07 20:08:50.902 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 20:08:50.903 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 20:08:50.904 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 2.0323ms
+2024-08-07 20:08:51.378 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 475.4304ms
+2024-08-07 20:08:51.604 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 20:08:51.702 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.7187ms
+2024-08-07 20:09:01.178 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:09:01.185 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:09:01.186 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:09:01.186 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 7.5579ms
+2024-08-07 20:09:23.584 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:09:23.588 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:09:23.588 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:09:23.588 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 3.6747ms
+2024-08-07 20:10:24.963 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-07 20:10:24.964 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:10:24.964 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:10:24.964 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 401 0 null 1.3799ms
+2024-08-07 20:11:36.773 +05:30  INF  1 servers were removed due to timeout
+2024-08-07 20:14:39.185 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 72
+2024-08-07 20:14:39.206 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:14:39.210 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:14:39.260 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-07 20:14:41.415 +05:30  INF  Executed DbCommand (36ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[admin_id], [a].[email], [a].[name], [a].[password]
+FROM [Admins] AS [a]
+WHERE [a].[email] = @__email_0
+2024-08-07 20:14:42.371 +05:30  INF  Admin bookhivea@gmail.com Logged in
+2024-08-07 20:14:42.382 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Admin'.
+2024-08-07 20:14:42.395 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 3125.9264ms
+2024-08-07 20:14:42.396 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:14:42.408 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 200 null application/json; charset=utf-8 3223.0092ms
+2024-08-07 20:15:28.746 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:15:28.747 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:15:28.747 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:15:28.747 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 0.7651ms
+2024-08-07 20:16:40.435 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:16:40.436 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:16:40.436 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:16:40.436 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 1.1587ms
+2024-08-07 20:26:37.932 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:26:37.933 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:26:37.933 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:26:37.933 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 0.6275ms
+2024-08-07 20:26:40.542 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:26:40.542 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:26:40.542 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:26:40.543 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 1.1648ms
+2024-08-07 20:27:39.969 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:27:39.970 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:27:39.970 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:27:39.970 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 0.8034ms
+2024-08-07 20:47:03.013 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 20:47:03.101 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 3:17:03 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:47:03.118 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/6/2024 11:31:37 AM', Current time (UTC): '8/7/2024 3:17:03 PM'.
+2024-08-07 20:47:03.119 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:47:03.121 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:47:03.125 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 401 0 null 112.2221ms
+2024-08-07 20:48:07.400 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 72
+2024-08-07 20:48:07.402 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:48:07.402 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:48:07.402 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-07 20:48:07.496 +05:30  INF  Executed DbCommand (9ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[admin_id], [a].[email], [a].[name], [a].[password]
+FROM [Admins] AS [a]
+WHERE [a].[email] = @__email_0
+2024-08-07 20:48:08.138 +05:30  INF  Admin bookhivea@gmail.com Logged in
+2024-08-07 20:48:08.139 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Admin'.
+2024-08-07 20:48:08.140 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 737.2977ms
+2024-08-07 20:48:08.140 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:48:08.140 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 200 null application/json; charset=utf-8 739.9705ms
+2024-08-07 20:49:05.077 +05:30  INF  Request starting HTTP/1.1 GET https://localhost:7136/Books - application/json 109
+2024-08-07 20:49:05.100 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 20:49:05.107 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-07 20:49:05.433 +05:30  INF  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-07 20:49:05.771 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:49:05.927 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 819.8756ms
+2024-08-07 20:49:05.927 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 20:49:05.927 +05:30  INF  Request finished HTTP/1.1 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 850.5418ms
+2024-08-07 20:49:45.414 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:49:45.415 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:49:45.415 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:49:45.415 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 0.8271ms
+2024-08-07 20:49:59.028 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-07 20:49:59.046 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 18.1036ms
+2024-08-07 20:49:59.095 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 20:49:59.095 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 0.6325ms
+2024-08-07 20:49:59.099 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-07 20:49:59.140 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.326ms
+2024-08-07 20:49:59.940 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-07 20:50:00.140 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.6028ms
+2024-08-07 20:50:20.740 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:50:20.741 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:50:20.741 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:50:20.741 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 0.8513ms
+2024-08-07 20:58:00.318 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Enquiry - null null
+2024-08-07 20:58:00.318 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:00.332 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Enquiry - 204 null null 1.5076ms
+2024-08-07 20:58:00.333 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Author - null null
+2024-08-07 20:58:00.334 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:00.334 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Author - 204 null null 1.0908ms
+2024-08-07 20:58:00.334 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Books - null null
+2024-08-07 20:58:00.335 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:00.335 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Books - 204 null null 0.2625ms
+2024-08-07 20:58:00.363 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-07 20:58:00.364 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:00.365 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+2024-08-07 20:58:00.365 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:58:00.365 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:58:00.365 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 401 0 null 2.356ms
+2024-08-07 20:58:00.381 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Enquiry - null null
+2024-08-07 20:58:00.382 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:00.382 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+2024-08-07 20:58:00.382 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:00.383 +05:30  INF  Executing endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 20:58:00.383 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:58:00.384 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:00.384 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:00 PM'.
+2024-08-07 20:58:00.384 +05:30  INF  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-07 20:58:00.384 +05:30  INF  AuthenticationScheme: Bearer was challenged.
+2024-08-07 20:58:00.385 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 401 0 null 1.3232ms
+2024-08-07 20:58:00.385 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Genre - null null
+2024-08-07 20:58:00.385 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:00.385 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Genre - 204 null null 0.2561ms
+2024-08-07 20:58:01.355 +05:30  INF  Route matched with {action = "GetAll", controller = "Enquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Entity]]] GetAll() on controller BookStore.Controllers.Enquiry (BookStore).
+2024-08-07 20:58:01.389 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 20:58:01.392 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:01 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:01.393 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:01 PM'.
+2024-08-07 20:58:01.393 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:01.393 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:01.398 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 20:58:01.417 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 20:58:01.417 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[enq_id], [e].[isRead], [e].[message], [e].[user_email]
+FROM [Enquiries] AS [e]
+2024-08-07 20:58:01.424 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:01.425 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 26.1187ms
+2024-08-07 20:58:01.425 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:01.425 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 35.466ms
+2024-08-07 20:58:01.437 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Entity, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:01.444 +05:30  INF  Executed action BookStore.Controllers.Enquiry.GetAll (BookStore) in 87.961ms
+2024-08-07 20:58:01.444 +05:30  INF  Executed endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 20:58:01.444 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Enquiry - 200 null application/json; charset=utf-8 1063.3465ms
+2024-08-07 20:58:01.460 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 20:58:01.463 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:01 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:01.464 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:01 PM'.
+2024-08-07 20:58:01.464 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:01.464 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:01.464 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 20:58:01.466 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 20:58:01.467 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:01.467 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 2.9079ms
+2024-08-07 20:58:01.467 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:01.467 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 7.2388ms
+2024-08-07 20:58:21.493 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Login - null null
+2024-08-07 20:58:21.493 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.493 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Login - 204 null null 0.61ms
+2024-08-07 20:58:21.497 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 57
+2024-08-07 20:58:21.497 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:21 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-07 20:58:21.498 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 5:32:45 AM', Current time (UTC): '8/7/2024 3:28:21 PM'.
+2024-08-07 20:58:21.498 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.498 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:58:21.498 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-07 20:58:21.507 +05:30  INF  Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[admin_id], [a].[email], [a].[name], [a].[password]
+FROM [Admins] AS [a]
+WHERE [a].[email] = @__email_0
+2024-08-07 20:58:21.861 +05:30  INF  Admin bookhivea@gmail.com Logged in
+2024-08-07 20:58:21.861 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Admin'.
+2024-08-07 20:58:21.861 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 363.4286ms
+2024-08-07 20:58:21.862 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-07 20:58:21.862 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 200 null application/json; charset=utf-8 365.2769ms
+2024-08-07 20:58:21.973 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Enquiry - null null
+2024-08-07 20:58:21.973 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Books - null null
+2024-08-07 20:58:21.973 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.973 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.973 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Enquiry - 204 null null 0.6357ms
+2024-08-07 20:58:21.973 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Books - 204 null null 0.3615ms
+2024-08-07 20:58:21.973 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Author - null null
+2024-08-07 20:58:21.974 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.974 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Author - 204 null null 0.3179ms
+2024-08-07 20:58:21.977 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-07 20:58:21.977 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-07 20:58:21.978 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.978 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:21.978 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 20:58:21.978 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 20:58:21.979 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-07 20:58:21.983 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-07 20:58:22.016 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Enquiry - null null
+2024-08-07 20:58:22.016 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:22.017 +05:30  INF  Executing endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 20:58:22.017 +05:30  INF  Route matched with {action = "GetAll", controller = "Enquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Entity]]] GetAll() on controller BookStore.Controllers.Enquiry (BookStore).
+2024-08-07 20:58:22.026 +05:30  INF  Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+ORDER BY [a].[UpdatedAt] DESC
+2024-08-07 20:58:22.029 +05:30  INF  Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-07 20:58:22.053 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[enq_id], [e].[isRead], [e].[message], [e].[user_email]
+FROM [Enquiries] AS [e]
+2024-08-07 20:58:22.053 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Entity, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:22.054 +05:30  INF  Executed action BookStore.Controllers.Enquiry.GetAll (BookStore) in 37.0866ms
+2024-08-07 20:58:22.054 +05:30  INF  Executed endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-07 20:58:22.054 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Enquiry - 200 null application/json; charset=utf-8 38.5189ms
+2024-08-07 20:58:22.059 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Genre - null null
+2024-08-07 20:58:22.060 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:22.060 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Genre - 204 null null 0.4877ms
+2024-08-07 20:58:22.062 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 20:58:22.063 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:22.063 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:22.063 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 20:58:22.067 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 20:58:22.068 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:22.068 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 4.7224ms
+2024-08-07 20:58:22.068 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:22.068 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 5.7809ms
+2024-08-07 20:58:22.260 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:22.298 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 314.5793ms
+2024-08-07 20:58:22.298 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-07 20:58:22.298 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 320.9091ms
+2024-08-07 20:58:22.304 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:22.326 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 347.8505ms
+2024-08-07 20:58:22.327 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-07 20:58:22.327 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 349.5909ms
+2024-08-07 20:58:22.380 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-07 20:58:22.381 +05:30  INF  CORS policy execution successful.
+2024-08-07 20:58:22.382 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:22.382 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-07 20:58:22.385 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-07 20:58:22.386 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-07 20:58:22.387 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 5.2097ms
+2024-08-07 20:58:22.387 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-07 20:58:22.387 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 6.9655ms
+2024-08-07 21:33:06.257 +05:30  ERR  Failed to process the job '9': an exception occurred.System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, ParseAddressInfo& parsedAddress, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at BookStore.Repository.EmailSettings.sendEmail(String toMail, String subject, String body) in D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore\Repository\EmailSettings.cs:line 20
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+

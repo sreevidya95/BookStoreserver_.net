@@ -22,10 +22,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
 //Add services to the container.
-builder.Services.AddHangfire(x =>
-           x.UseSqlServerStorage("Server = localhost; Database = Bookstore; User Id = sa; " +
-"Password=Password@123;TrustServerCertificate=True;"));
-builder.Services.AddHangfireServer();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -56,9 +53,13 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer(options =>
         ValidIssuer = builder.Configuration["Authentication:Issuer"],
         ValidAudience = builder.Configuration["Authentication:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(builder.Configuration["Authentication:SecretForKey"])),
+       
     };
 });
-
+builder.Services.AddHangfire(x =>
+           x.UseSqlServerStorage("Server = localhost; Database = Bookstore; User Id = sa; " +
+"Password=Password@123;TrustServerCertificate=True;"));
+builder.Services.AddHangfireServer();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

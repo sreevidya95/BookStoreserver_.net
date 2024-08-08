@@ -14,7 +14,7 @@ namespace BookStore.Controllers
     /// </summary>
     [Route("[Controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class GenreController : ControllerBase
     {
         private readonly IBookStoreRepository bookStore;
@@ -133,6 +133,7 @@ namespace BookStore.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
 
     }
 }

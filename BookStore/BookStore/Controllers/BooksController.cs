@@ -13,7 +13,7 @@ namespace BookStore.Controllers
     /// </summary>
     [Route("[Controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class BooksController : ControllerBase
     {
         private readonly IBookStoreRepository bookStore;

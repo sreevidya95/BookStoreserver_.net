@@ -6,11 +6,7 @@ import { Tooltip } from 'react-tooltip'
 import { useEffect } from 'react';
 function App() {
   const navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem("id")) {
-      navigate("/books");
-    }
-  }, []);
+ 
   return (
     <div className='App'>
       <div className="container-fluid">

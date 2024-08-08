@@ -1,0 +1,130 @@
+2024-08-08 12:22:54.904 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-08 12:22:54.912 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 12:22:54.913 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-08 12:22:54.956 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-08 12:22:54.958 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 12:22:54.959 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 45.7471ms
+2024-08-08 12:22:54.959 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 12:22:54.959 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 55.1219ms
+2024-08-08 23:57:13.749 +05:30  INF  Start installing Hangfire SQL objects...
+2024-08-08 23:57:21.110 +05:30  INF  Hangfire SQL objects installed.
+2024-08-08 23:57:21.311 +05:30  INF  User profile is available. Using 'D:\Users\sreevidya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 23:57:21.886 +05:30  INF  Now listening on: https://localhost:7136
+2024-08-08 23:57:21.886 +05:30  INF  Now listening on: http://localhost:5192
+2024-08-08 23:57:21.907 +05:30  INF  Starting Hangfire Server using job storage: 'SQL Server: localhost@Bookstore'
+2024-08-08 23:57:21.907 +05:30  INF  Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-08 23:57:21.907 +05:30  INF  Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-08 23:57:22.033 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-08-08 23:57:22.034 +05:30  INF  Hosting environment: Development
+2024-08-08 23:57:22.034 +05:30  INF  Content root path: D:\Users\sreevidya\source\repos\BookStoreserver_.net\BookStore\BookStore
+2024-08-08 23:57:23.902 +05:30  INF  Server wsamzn-gdq29na1:14500:25a230df successfully announced in 1879.7715 ms
+2024-08-08 23:57:23.911 +05:30  INF  Server wsamzn-gdq29na1:14500:25a230df is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-08 23:57:24.405 +05:30  INF  1 servers were removed due to timeout
+2024-08-08 23:57:27.239 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/index.html - null null
+2024-08-08 23:57:28.115 +05:30  INF  Server wsamzn-gdq29na1:14500:25a230df all the dispatchers started
+2024-08-08 23:57:29.175 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/index.html - 200 null text/html;charset=utf-8 1934.9806ms
+2024-08-08 23:57:33.794 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 23:57:33.800 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 6.3202ms
+2024-08-08 23:57:34.553 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/_vs/browserLink - null null
+2024-08-08 23:57:34.615 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.8296ms
+2024-08-08 23:57:38.263 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - null null
+2024-08-08 23:57:38.515 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 252.3507ms
+2024-08-08 23:57:58.024 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Login - null null
+2024-08-08 23:58:00.404 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:00.405 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Login - 204 null null 2381.6144ms
+2024-08-08 23:58:00.428 +05:30  INF  Request starting HTTP/2 POST https://localhost:7136/Login - application/json 57
+2024-08-08 23:58:00.671 +05:30  INF  Failed to validate the token.Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 4:28:21 PM', Current time (UTC): '8/8/2024 6:28:00 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+
+2024-08-08 23:58:00.716 +05:30  INF  Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/7/2024 4:28:21 PM', Current time (UTC): '8/8/2024 6:28:00 PM'.
+2024-08-08 23:58:00.717 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:00.720 +05:30  INF  Executing endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-08 23:58:00.784 +05:30  INF  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BookStore.Models.Admin]] Login(BookStore.Models.Admin) on controller BookStore.Controllers.AdminController (BookStore).
+2024-08-08 23:58:05.636 +05:30  INF  Executed DbCommand (84ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[admin_id], [a].[email], [a].[name], [a].[password]
+FROM [Admins] AS [a]
+WHERE [a].[email] = @__email_0
+2024-08-08 23:58:07.204 +05:30  INF  Admin bookhivea@gmail.com Logged in
+2024-08-08 23:58:07.218 +05:30  INF  Executing OkObjectResult, writing value of type 'BookStore.Models.Admin'.
+2024-08-08 23:58:07.231 +05:30  INF  Executed action BookStore.Controllers.AdminController.Login (BookStore) in 6439.7306ms
+2024-08-08 23:58:07.232 +05:30  INF  Executed endpoint 'BookStore.Controllers.AdminController.Login (BookStore)'
+2024-08-08 23:58:07.242 +05:30  INF  Request finished HTTP/2 POST https://localhost:7136/Login - 200 null application/json; charset=utf-8 6814.2075ms
+2024-08-08 23:58:09.562 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Enquiry - null null
+2024-08-08 23:58:09.566 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.566 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Enquiry - 204 null null 4.2987ms
+2024-08-08 23:58:09.569 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Enquiry - null null
+2024-08-08 23:58:09.571 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Books - null null
+2024-08-08 23:58:09.572 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.572 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Books - 204 null null 0.3732ms
+2024-08-08 23:58:09.574 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Books - null null
+2024-08-08 23:58:09.585 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.585 +05:30  INF  Executing endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-08 23:58:09.590 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.590 +05:30  INF  Executing endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-08 23:58:09.591 +05:30  INF  Route matched with {action = "GetAll", controller = "Enquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Entity]]] GetAll() on controller BookStore.Controllers.Enquiry (BookStore).
+2024-08-08 23:58:09.594 +05:30  INF  Route matched with {action = "getBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Books]]] getBooksAsync() on controller BookStore.Controllers.BooksController (BookStore).
+2024-08-08 23:58:09.637 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Author - null null
+2024-08-08 23:58:09.637 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.637 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Author - 204 null null 0.5049ms
+2024-08-08 23:58:09.749 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Author - null null
+2024-08-08 23:58:09.754 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:09.754 +05:30  INF  Executing endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-08 23:58:09.760 +05:30  INF  Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Author]]] GetAuthors() on controller BookStore.Controllers.AuthorController (BookStore).
+2024-08-08 23:58:09.787 +05:30  INF  Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[enq_id], [e].[isRead], [e].[message], [e].[user_email]
+FROM [Enquiries] AS [e]
+2024-08-08 23:58:09.822 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Entity, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 23:58:09.830 +05:30  INF  Executed action BookStore.Controllers.Enquiry.GetAll (BookStore) in 237.842ms
+2024-08-08 23:58:09.830 +05:30  INF  Executed endpoint 'BookStore.Controllers.Enquiry.GetAll (BookStore)'
+2024-08-08 23:58:09.830 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Enquiry - 200 null application/json; charset=utf-8 261.1248ms
+2024-08-08 23:58:09.867 +05:30  INF  Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[book_id], [b].[title], [b].[price], [b].[publication_date], [b].[AuthorAuthorId], [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name], [b].[GenreGenreId], [b].[book_image], [g].[genre_id], [g].[genre_name], [b].[CreatedAt], [b].[UpdatedAt], [b].[offerOfferId]
+FROM [Books] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorAuthorId] = [a].[author_id]
+INNER JOIN [Genres] AS [g] ON [b].[GenreGenreId] = [g].[genre_id]
+ORDER BY [b].[UpdatedAt] DESC
+2024-08-08 23:58:09.873 +05:30  INF  Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[author_id], [a].[CreatedAt], [a].[UpdatedAt], [a].[author_image], [a].[biography], [a].[name]
+FROM [Authors] AS [a]
+ORDER BY [a].[UpdatedAt] DESC
+2024-08-08 23:58:10.214 +05:30  INF  Request starting HTTP/2 OPTIONS https://localhost:7136/Genre - null null
+2024-08-08 23:58:10.214 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:10.214 +05:30  INF  Request finished HTTP/2 OPTIONS https://localhost:7136/Genre - 204 null null 0.6161ms
+2024-08-08 23:58:10.230 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-08 23:58:10.233 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:10.233 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 23:58:10.238 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-08 23:58:10.288 +05:30  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-08 23:58:10.322 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 23:58:10.323 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 84.6595ms
+2024-08-08 23:58:10.323 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 23:58:10.323 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 93.5853ms
+2024-08-08 23:58:10.513 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Books, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 23:58:10.599 +05:30  INF  Executed action BookStore.Controllers.BooksController.getBooksAsync (BookStore) in 1004.2103ms
+2024-08-08 23:58:10.599 +05:30  INF  Executed endpoint 'BookStore.Controllers.BooksController.getBooksAsync (BookStore)'
+2024-08-08 23:58:10.599 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Books - 200 null application/json; charset=utf-8 1025.248ms
+2024-08-08 23:58:10.631 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Author, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 23:58:10.663 +05:30  INF  Executed action BookStore.Controllers.AuthorController.GetAuthors (BookStore) in 902.8739ms
+2024-08-08 23:58:10.663 +05:30  INF  Executed endpoint 'BookStore.Controllers.AuthorController.GetAuthors (BookStore)'
+2024-08-08 23:58:10.663 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Author - 200 null application/json; charset=utf-8 913.61ms
+2024-08-08 23:58:11.362 +05:30  INF  Request starting HTTP/2 GET https://localhost:7136/Genre - null null
+2024-08-08 23:58:11.363 +05:30  INF  CORS policy execution successful.
+2024-08-08 23:58:11.363 +05:30  INF  Executing endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 23:58:11.363 +05:30  INF  Route matched with {action = "GetGenres", controller = "Genre"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookStore.Models.Genre]]] GetGenres() on controller BookStore.Controllers.GenreController (BookStore).
+2024-08-08 23:58:11.408 +05:30  INF  Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[genre_id], [g].[genre_name]
+FROM [Genres] AS [g]
+2024-08-08 23:58:11.409 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookStore.Models.Genre, BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 23:58:11.436 +05:30  INF  Executed action BookStore.Controllers.GenreController.GetGenres (BookStore) in 72.6898ms
+2024-08-08 23:58:11.436 +05:30  INF  Executed endpoint 'BookStore.Controllers.GenreController.GetGenres (BookStore)'
+2024-08-08 23:58:11.437 +05:30  INF  Request finished HTTP/2 GET https://localhost:7136/Genre - 200 null application/json; charset=utf-8 74.8549ms
