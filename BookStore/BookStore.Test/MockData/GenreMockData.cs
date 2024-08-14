@@ -19,10 +19,19 @@ namespace BookStore.Test.MockData
             return null;
 
         }
+        public static Entities.Author GetAuthorsByIdNull(int id)
+        {
+            return null;
+
+        }
         public static IEnumerable<Entities.Genre> GetGenresExc(){
             throw new Exception("Connection Exception");
         }
-        public static IEnumerable<Entities.Genre> GetGenres()
+        public static IEnumerable<Entities.Author> GetAuthors()
+        {
+            return null;
+        }
+            public static IEnumerable<Entities.Genre> GetGenres()
         {
 
             return new List<Entities.Genre>

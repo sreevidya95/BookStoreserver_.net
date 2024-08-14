@@ -5,6 +5,7 @@ using Hangfire;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Reflection;
 
@@ -28,14 +29,29 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(setupAction =>
 {
-   
-    setupAction.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory,$"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
-    setupAction.AddSecurityDefinition("BookStoreApiAuthentication", new()
+    setupAction.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
+    setupAction.AddSecurityDefinition("BookStoreApiBearerAuth", new()
     {
-         Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
-         Scheme = "Bearer",
-         Description = "Input a Valid Token To Access Api"
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        Description = "Input a valid token"
     });
+    setupAction.AddSecurityRequirement(new()
+    {
+        { 
+        new()
+        {
+            Reference = new OpenApiReference
+            {
+               Type = ReferenceType.SecurityScheme,
+               Id = "BookStoreApiBearerAuth"
+            }
+        },
+        new List<string>()
+    }
+    });
+   
+   
 });
 builder.Services.AddDbContext<BookStoreDbContext>(options =>
 options.UseSqlServer("Server=localhost;Database=Bookstore;User Id=sa;" +

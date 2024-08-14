@@ -40,7 +40,7 @@ export default function BookDetails() {
                 </div> :
                 <div className="row">
                     <div className="col-12 col-md-6 col-xl-6 mt-5 book">
-                        {book.book_image ? <img src={"data:image/jpeg;base64," + book.book_image} alt="no" width={!isMobile && "500"} className="b-img" /> : <img src="/noimg.webp" alt="no" width={!isMobile && "500"} className="b-img" />}
+                        {book.book_image ? <img src={"data:image/jpeg;base64,"+book.book_image} alt="no" width={!isMobile && "500"} className="b-img" /> : <img src="/noimg.webp" alt="no" width={!isMobile && "500"} className="b-img" />}
                     </div>
                     <div className="col-12 col-md-6 col-xl-6 mt-5 auth">
                         {book.author && <h6 className="fs-2 text-secondary col-12 arsenal-sc-regular">By {book.author.name}</h6>}
@@ -58,7 +58,7 @@ export default function BookDetails() {
                         {book.author &&
                             <div className="row">
                                 <div className="col-md-3 col-xl-3 col-12 mt-5 book">
-                                    {book.author && book.author.author_image ? <img src={book.author.author_image} alt="no" width="100" height="100" className="auth_img" /> :
+                                    {book.author && book.author.author_image ? <img src={"data:image/jpeg;base64,"+book.author.author_image} alt="no" width="100" height="100" className="auth_img" /> :
                                         <img src="/user.jpg" alt="no" width="100" className="auth_img" />}
                                 </div>
                                 <div className="col-md-8 col-xl-8 col-12 mt-5">

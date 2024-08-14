@@ -124,21 +124,21 @@ function App() {
         <section className='row'>
           <div className='col-12'>
             <p className='col-12 col-md-4 col-xl-4 mt-5 display-5 text-center offset-md-4 offset-xl-4 mb-5 arsenal-sc-regular text-light w3-animate-top' style={{ backgroundColor: "rgb(209, 64, 49)" }}>Bestsellers</p>
-            <img src="http://localhost:3000/images/hpcs.jpeg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/pride_prejudice.jpeg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/great_expectations.jpeg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/immortals.jpeg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/hp1.jpeg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
+            <img src="dragon.jpg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
+            <img src="lostcity.jpg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
+            <img src="chronicl.jpg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
+            <img src="secretkeeper.jpg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
+            <img src="hp.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
           </div>
         </section>
         <section className='row'>
           <div className='col-12'>
             <p className='col-12 col-md-4 col-xl-4 mt-5 display-5 text-center offset-md-4 offset-xl-4 mb-5 arsenal-sc-regular text-white  w3-animate-bottom' style={{ backgroundColor: "rgb(209, 64, 49)" }}>Bestselling Authors</p>
-            <img src="http://localhost:3000/images/jk.jpeg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/amish.jpeg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/ruskin.jpeg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/rk_narayan.jpeg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
-            <img src="http://localhost:3000/images/jane_austen.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
+            <img src="jkrowling.jpg" alt="no" className='col-md-2 col-xl-2 col-4 me-4 mlh' height="300" />
+            <img src="emily.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
+            <img src="david.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
+            <img src="carol.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
+            <img src="bob.jpg" alt="no" className='col-md-2 col-4 col-xl-2 me-4 mlh' height="300" />
           </div>
         </section>
         <footer className='mt-5 row'>

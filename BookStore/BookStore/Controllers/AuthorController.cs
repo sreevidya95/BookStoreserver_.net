@@ -243,6 +243,7 @@ namespace BookStore.Controllers
                            logger.LogInformation($"The Author with id '{authorCurrent.author_id}' is updated");
                                
                         }
+                    
                     return Ok(model);
                 }
                 }catch(Exception ex)
